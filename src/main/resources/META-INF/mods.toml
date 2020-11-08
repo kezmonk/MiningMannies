@@ -1,0 +1,25 @@
+modLoader="javafml"
+loaderVersion="[31,)"
+
+[[mods]]
+modId="miningmannies"
+version="1.1.0"
+displayName="MiningMannies"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
+displayURL="https://mcreator.net/modification/67670/mining-mannies"
+logoFile="logo.png"
+authors="Kezmonk, MCreator"
+description='''
+Use Mining Mannies to dig and collect any type of block.
+'''
+
+[[dependencies.miningmannies]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.15.2]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+

@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "miningmannies:ore_detector"
+    },
+    "title": {
+      "translate": "advancements.level_2_mannies.title"
+    },
+    "description": {
+      "translate": "advancements.level_2_mannies.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "level_2_mannies": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 20,
+    "recipes": [
+      "miningmannies:craft_ore_detector",
+      "miningmannies:craft_manni_egg_level_2",
+      "miningmannies:craft_climbing_axe"
+    ]
+  },
+  "parent": "miningmannies:adventure_begins"
+}

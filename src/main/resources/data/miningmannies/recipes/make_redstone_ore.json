@@ -1,0 +1,42 @@
+{
+  "group": "ore",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:redstone"
+    },
+    "1": {
+      "tag": "forge:stone"
+    },
+    "2": {
+      "item": "minecraft:redstone"
+    },
+    "3": {
+      "tag": "forge:stone"
+    },
+    "4": {
+      "item": "minecraft:redstone"
+    },
+    "5": {
+      "tag": "forge:stone"
+    },
+    "6": {
+      "item": "minecraft:redstone"
+    },
+    "7": {
+      "tag": "forge:stone"
+    },
+    "8": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "item": "minecraft:redstone_ore",
+    "count": 1
+  }
+}

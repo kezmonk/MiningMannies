@@ -1,0 +1,39 @@
+{
+  "group": "miningmannies",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "miningmannies:steel_ingot"
+    },
+    "1": {
+      "item": "miningmannies:steel_ingot"
+    },
+    "2": {
+      "item": "miningmannies:steel_ingot"
+    },
+    "3": {
+      "item": "miningmannies:steel_ingot"
+    },
+    "5": {
+      "item": "miningmannies:steel_ingot"
+    },
+    "6": {
+      "item": "miningmannies:steel_ingot"
+    },
+    "7": {
+      "item": "miningmannies:steel_ingot"
+    },
+    "8": {
+      "item": "miningmannies:steel_ingot"
+    }
+  },
+  "result": {
+    "item": "miningmannies:steel_block",
+    "count": 1
+  }
+}

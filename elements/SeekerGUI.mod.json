@@ -1,0 +1,44 @@
+{
+  "_fv": 10,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 352,
+    "height": 327,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Looking for: ",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Looking for: ",
+          "x": 329,
+          "y": 137
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "color": {
+            "value": -3342388,
+            "falpha": 0.0
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 462,
+          "y": 132
+        }
+      }
+    ]
+  }
+}

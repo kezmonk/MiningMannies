@@ -1,0 +1,42 @@
+{
+  "_fv": 10,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "metal_detector",
+    "customModelName": "Normal",
+    "name": "Ore Detector",
+    "specialInfo": [
+      "click down to detect",
+      "left sneak click air to toggle ore in left hand"
+    ],
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "toolType": "Special",
+    "harvestLevel": 0,
+    "efficiency": 0.0,
+    "attackSpeed": 1.0,
+    "enchantability": 2,
+    "damageVsEntity": 0.2,
+    "usageCount": 100,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "Items.REDSTONE"
+      }
+    ],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "OreDetectorRightClickedInAir"
+    },
+    "onCrafted": {
+      "name": "OreDetectorItemIsCraftedsmelted"
+    },
+    "onEntitySwing": {
+      "name": "OreDetectorEntitySwingsItem"
+    }
+  }
+}

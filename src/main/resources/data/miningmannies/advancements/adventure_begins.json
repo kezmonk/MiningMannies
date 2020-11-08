@@ -1,0 +1,44 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "miningmannies:ore_detector"
+    },
+    "title": {
+      "translate": "advancements.adventure_begins.title"
+    },
+    "description": {
+      "translate": "advancements.adventure_begins.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "adventure_begins": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:wooden_pickaxe",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 5,
+    "recipes": [
+      "miningmannies:craft_manni_egg_level_1",
+      "miningmannies:make_grass_block",
+      "miningmannies:make_dirt_ffrom_grass_block",
+      "miningmannies:make_dry_grass_block",
+      "miningmannies:make_cobblestone_from_stone"
+    ]
+  }
+}

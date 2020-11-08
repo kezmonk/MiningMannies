@@ -1,0 +1,40 @@
+{
+  "display": {
+    "icon": {
+      "item": "miningmannies:steel_ingot"
+    },
+    "title": {
+      "translate": "advancements.make_steel.title"
+    },
+    "description": {
+      "translate": "advancements.make_steel.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "make_steel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:iron_ingot",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 10,
+    "recipes": [
+      "miningmannies:blast_steel"
+    ]
+  },
+  "parent": "miningmannies:make_own_iron_ore"
+}

@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "miningmannies:ore_detector"
+    },
+    "title": {
+      "translate": "advancements.level_3_mannies.title"
+    },
+    "description": {
+      "translate": "advancements.level_3_mannies.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "level_3_mannies": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 30,
+    "recipes": [
+      "miningmannies:craft_manni_egg_level_3"
+    ]
+  },
+  "parent": "miningmannies:level_2_mannies"
+}

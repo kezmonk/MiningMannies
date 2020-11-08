@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "miningmannies:block/teleporter"
+    },
+    "facing=east": {
+      "model": "miningmannies:block/teleporter",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "miningmannies:block/teleporter",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "miningmannies:block/teleporter",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "miningmannies:block/teleporter",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "miningmannies:block/teleporter",
+      "x": 90
+    }
+  }
+}

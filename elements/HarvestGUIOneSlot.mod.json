@@ -1,0 +1,72 @@
+{
+  "_fv": 10,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 352,
+    "height": 332,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "color": {
+            "value": -6710785,
+            "falpha": 0.0
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 465,
+          "y": 117
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Harvest Type",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Harvest Type",
+          "x": 321,
+          "y": 117
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Harvested",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Harvested",
+          "x": 321,
+          "y": 181
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "color": {
+            "value": -26113,
+            "falpha": 0.0
+          },
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #1",
+          "x": 465,
+          "y": 181
+        }
+      }
+    ]
+  }
+}

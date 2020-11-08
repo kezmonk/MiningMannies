@@ -1,0 +1,258 @@
+{
+  "_fv": 10,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 438,
+    "height": 374,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "",
+          "width": 80,
+          "height": 40,
+          "name": "y_pos",
+          "x": 401,
+          "y": 89
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "",
+          "width": 80,
+          "height": 40,
+          "name": "z_pos",
+          "x": 529,
+          "y": 89
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "",
+          "width": 80,
+          "height": 40,
+          "name": "x_pos",
+          "x": 269,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "X",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "X",
+          "x": 245,
+          "y": 101
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Y",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Y",
+          "x": 377,
+          "y": 101
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Z",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Z",
+          "x": 509,
+          "y": 101
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<BNBT:text:ownerName>'s Teleporter",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "<BNBT:text:ownerName>'s Teleporter",
+          "x": 342,
+          "y": 61
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Teleport Player Manually to Coords",
+          "onClick": {
+            "name": "TeleportManuallyButtonClick"
+          },
+          "width": 388,
+          "height": 40,
+          "name": "Teleport Player Manually to Coords",
+          "x": 237,
+          "y": 133
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Set Manni Destination",
+          "onClick": {
+            "name": "TeleportSetManniDestination"
+          },
+          "width": 224,
+          "height": 40,
+          "name": "Set Manni Destination",
+          "x": 225,
+          "y": 185
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Teleport Chance",
+          "onClick": {
+            "name": "TeleportToggleTeleportChance"
+          },
+          "width": 168,
+          "height": 40,
+          "name": "Teleport Chance",
+          "x": 461,
+          "y": 185
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Teleport Player to Last Broadcast Position",
+          "onClick": {
+            "name": "TeleportToManniBroadcast"
+          },
+          "width": 425,
+          "height": 40,
+          "name": "Teleport Player to Last Broadcast Position",
+          "x": 213,
+          "y": 337
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Teleporter located at <x> <y> and <z>.",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Teleporter located at <x> <y> and <z>.",
+          "x": 232,
+          "y": 299
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<BNBT:number:teleportChance> %",
+          "color": {
+            "value": -13421773,
+            "falpha": 0.0
+          },
+          "name": "<BNBT:number:teleportChance> %",
+          "x": 517,
+          "y": 233
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<BNBT:integer:XposDestination>",
+          "color": {
+            "value": -13434727,
+            "falpha": 0.0
+          },
+          "name": "<BNBT:integer:XposDestination>",
+          "x": 221,
+          "y": 233
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<BNBT:integer:YposDestination>",
+          "color": {
+            "value": -13434727,
+            "falpha": 0.0
+          },
+          "name": "<BNBT:integer:YposDestination>",
+          "x": 305,
+          "y": 233
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<BNBT:integer:ZposDestination>",
+          "color": {
+            "value": -13434727,
+            "falpha": 0.0
+          },
+          "name": "<BNBT:integer:ZposDestination>",
+          "x": 389,
+          "y": 233
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:XposManniBroadcast>",
+          "color": {
+            "value": -13421824,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:XposManniBroadcast>",
+          "x": 253,
+          "y": 397
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:YposManniBroadcast>",
+          "color": {
+            "value": -13421824,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:YposManniBroadcast>",
+          "x": 369,
+          "y": 397
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:ZposManniBroadcast>",
+          "color": {
+            "value": -13421824,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:ZposManniBroadcast>",
+          "x": 493,
+          "y": 397
+        }
+      }
+    ]
+  }
+}

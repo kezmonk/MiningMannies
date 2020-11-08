@@ -1,0 +1,30 @@
+{
+  "group": "manni_eggs",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:iron_pickaxe"
+    },
+    "3": {
+      "item": "minecraft:iron_pickaxe"
+    },
+    "4": {
+      "item": "minecraft:iron_ingot"
+    },
+    "5": {
+      "item": "minecraft:iron_pickaxe"
+    },
+    "7": {
+      "item": "minecraft:iron_pickaxe"
+    }
+  },
+  "result": {
+    "item": "miningmannies:spawn_egg_manni_level_3",
+    "count": 1
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "teleporter_mesh"
+      },
+      "name": "default"
+    }
+  }
+}

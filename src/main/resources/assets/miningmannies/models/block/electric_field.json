@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "miningmannies:blocks/invisible",
+    "up": "miningmannies:blocks/invisible",
+    "north": "miningmannies:blocks/electricfenceanimated",
+    "east": "miningmannies:blocks/electricfenceanimated",
+    "south": "miningmannies:blocks/electricfenceanimated",
+    "west": "miningmannies:blocks/electricfenceanimated",
+    "particle": "miningmannies:blocks/invisible"
+  }
+}

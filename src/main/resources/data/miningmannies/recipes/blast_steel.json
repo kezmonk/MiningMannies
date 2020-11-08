@@ -1,0 +1,12 @@
+{
+  "group": "blast_iron",
+  "type": "minecraft:blasting",
+  "experience": 5,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "minecraft:iron_ingot"
+  },
+  "result": {
+    "item": "miningmannies:steel_ingot"
+  }
+}

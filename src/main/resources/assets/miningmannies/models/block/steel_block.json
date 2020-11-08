@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "miningmannies:blocks/steel_plate",
+    "up": "miningmannies:blocks/steel_plate",
+    "north": "miningmannies:blocks/steel_plate",
+    "east": "miningmannies:blocks/steel_plate",
+    "south": "miningmannies:blocks/steel_plate",
+    "west": "miningmannies:blocks/steel_plate",
+    "particle": "miningmannies:blocks/steel_plate"
+  }
+}

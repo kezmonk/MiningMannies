@@ -1,0 +1,30 @@
+{
+  "group": "manni_eggs",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:diamond_pickaxe"
+    },
+    "3": {
+      "item": "minecraft:diamond_pickaxe"
+    },
+    "4": {
+      "item": "minecraft:diamond"
+    },
+    "5": {
+      "item": "minecraft:diamond_pickaxe"
+    },
+    "7": {
+      "item": "minecraft:diamond_pickaxe"
+    }
+  },
+  "result": {
+    "item": "miningmannies:spawn_egg_manni_level_4",
+    "count": 1
+  }
+}

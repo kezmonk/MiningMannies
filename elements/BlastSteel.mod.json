@@ -1,0 +1,20 @@
+{
+  "_fv": 10,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "xpReward": 5.0,
+    "cookingTime": 100,
+    "recipeRetstackSize": 1,
+    "group": "blast_iron",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "Items.IRON_INGOT"
+    },
+    "blastingReturnStack": {
+      "value": "CUSTOM:SteelIngot"
+    },
+    "name": "blast_steel",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "_fv": 10,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "climbingaxe64x",
+    "customModelName": "Normal",
+    "name": "Climbing Axe",
+    "specialInfo": [
+      "You need two to climb"
+    ],
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "toolType": "Special",
+    "harvestLevel": 1,
+    "efficiency": 7.0,
+    "attackSpeed": 1.0,
+    "enchantability": 2,
+    "damageVsEntity": 1.0,
+    "usageCount": 1000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "Items.IRON_INGOT"
+      }
+    ],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedOnBlock": {
+      "name": "ClimbingAxeRightClickedOnBlock"
+    },
+    "onItemInUseTick": {
+      "name": "ClimbingAxeToolInHandTick"
+    }
+  }
+}

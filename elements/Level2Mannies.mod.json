@@ -1,0 +1,29 @@
+{
+  "_fv": 10,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Phase 2 Mannies",
+    "achievementDescription": "Your mannies can now harvest 2 blocks!",
+    "achievementIcon": {
+      "value": "CUSTOM:OreDetector"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [
+      "CraftOreDetector",
+      "CraftManniEggLevel2",
+      "CraftClimbingAxe"
+    ],
+    "rewardFunction": "No function",
+    "rewardXP": 20,
+    "achievementType": "goal",
+    "parent": {
+      "value": "CUSTOM:AdventureBegins"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"41\" y=\"55\"><next><block type=\"advancement_trigger\" deletable=\"false\"/></next></block></xml>"
+  }
+}

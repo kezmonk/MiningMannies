@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "miningmannies:climbing_axe"
+    },
+    "title": {
+      "translate": "advancements.climb_with_an_axe.title"
+    },
+    "description": {
+      "translate": "advancements.climb_with_an_axe.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "climb_with_an_axe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "miningmannies:climbing_axe",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "miningmannies:make_metal_detector_adv"
+}
