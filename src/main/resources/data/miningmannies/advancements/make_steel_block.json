@@ -20,7 +20,7 @@
       "conditions": {
         "items": [
           {
-            "item": "miningmannies:steel_block",
+            "item": "miningmannies:steel_ingot",
             "count": {
               "min": 1,
               "max": 1
