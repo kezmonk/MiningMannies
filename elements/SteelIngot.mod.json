@@ -5,7 +5,7 @@
     "renderType": 0,
     "texture": "steel_ingot",
     "customModelName": "Normal",
-    "name": "Steel Ingot",
+    "name": "Steel Bar",
     "creativeTab": {
       "value": "MISC"
     },
@@ -13,7 +13,7 @@
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
-    "damageCount": 1000,
+    "damageCount": 0,
     "destroyAnyBlock": false,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,

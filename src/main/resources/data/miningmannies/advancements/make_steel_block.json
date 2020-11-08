@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "miningmannies:steel_ingot"
+      "item": "miningmannies:steel_block"
     },
     "title": {
       "translate": "advancements.make_steel_block.title"
@@ -20,7 +20,7 @@
       "conditions": {
         "items": [
           {
-            "item": "miningmannies:steel_ingot",
+            "item": "miningmannies:steel_block",
             "count": {
               "min": 1,
               "max": 1

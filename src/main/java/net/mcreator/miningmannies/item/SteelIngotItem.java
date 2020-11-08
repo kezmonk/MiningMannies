@@ -24,7 +24,7 @@ public class SteelIngotItem extends MiningmanniesModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(ItemGroup.MISC).maxDamage(1000));
+			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(64));
 			setRegistryName("steel_ingot");
 		}
 

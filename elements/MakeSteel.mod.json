@@ -3,7 +3,7 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Make Steel",
-    "achievementDescription": "You can make steel. Use it to make a block.",
+    "achievementDescription": "Blast iron to make steel.",
     "achievementIcon": {
       "value": "CUSTOM:SteelIngot"
     },

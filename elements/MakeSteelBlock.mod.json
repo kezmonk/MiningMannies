@@ -2,10 +2,10 @@
   "_fv": 10,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Make Steel",
-    "achievementDescription": "You can make steel. Use it to make a block.",
+    "achievementName": "Make Steel Block",
+    "achievementDescription": "You made a steel block, they're super tough.",
     "achievementIcon": {
-      "value": "CUSTOM:SteelIngot"
+      "value": "CUSTOM:SteelBlock"
     },
     "background": "Default",
     "disableDisplay": false,
@@ -22,6 +22,6 @@
     "parent": {
       "value": "CUSTOM:MakeSteel"
     },
-    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"item_in_inventory\" x=\"47\" y=\"25\"><value name=\"amount_l\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"amount_h\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:SteelIngot</field></block></value><next><block type=\"advancement_trigger\" deletable=\"false\"/></next></block></xml>"
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"item_in_inventory\" x=\"47\" y=\"25\"><value name=\"amount_l\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"amount_h\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:SteelBlock</field></block></value><next><block type=\"advancement_trigger\" deletable=\"false\"/></next></block></xml>"
   }
 }
