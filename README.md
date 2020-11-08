@@ -7,4 +7,5 @@ v1.1
 	corrected phase34 slot bug
 	added Steel advancement, recipe release
 	corrected Steel Block advancement, recipe release
+	made steel stackable
 </pre>
