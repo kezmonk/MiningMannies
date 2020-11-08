@@ -5,7 +5,7 @@ v1.0
 	official beta release
 v1.1 
 	corrected phase34 slot bug
-	added Steel advancement, recipe release
+	added Steel Bar advancement (was missing), recipe release
 	corrected Steel Block advancement, recipe release
 	made steel stackable
 </pre>
