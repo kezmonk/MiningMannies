@@ -7,8 +7,9 @@ import net.minecraft.world.World;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.Hand;
-import net.minecraft.util.ActionResult;
+import net.minecraft.util.Direction;
+import net.minecraft.util.ActionResultType;
+import net.minecraft.item.ItemUseContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
@@ -50,12 +51,16 @@ public class OreDetectorItem extends MiningmanniesModElements.ModElement {
 			}
 
 			@Override
-			public ActionResult<ItemStack> onItemRightClick(World world, PlayerEntity entity, Hand hand) {
-				ActionResult<ItemStack> retval = super.onItemRightClick(world, entity, hand);
-				ItemStack itemstack = retval.getResult();
-				double x = entity.getPosX();
-				double y = entity.getPosY();
-				double z = entity.getPosZ();
+			public ActionResultType onItemUse(ItemUseContext context) {
+				ActionResultType retval = super.onItemUse(context);
+				World world = context.getWorld();
+				BlockPos pos = context.getPos();
+				PlayerEntity entity = context.getPlayer();
+				Direction direction = context.getFace();
+				int x = pos.getX();
+				int y = pos.getY();
+				int z = pos.getZ();
+				ItemStack itemstack = context.getItem();
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();
 					$_dependencies.put("entity", entity);

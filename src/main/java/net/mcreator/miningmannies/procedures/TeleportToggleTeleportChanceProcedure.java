@@ -53,7 +53,7 @@ public class TeleportToggleTeleportChanceProcedure extends MiningmanniesModEleme
 			if (((MiningmanniesModVariables.ManniTeleportChance) >= 1)) {
 				MiningmanniesModVariables.ManniTeleportChance = (double) 1;
 			} else {
-				MiningmanniesModVariables.ManniTeleportChance = (double) ((MiningmanniesModVariables.ManniTeleportChance) + 0.1);
+				MiningmanniesModVariables.ManniTeleportChance = (double) ((MiningmanniesModVariables.ManniTeleportChance) + 0.05);
 				if (entity instanceof PlayerEntity)
 					((PlayerEntity) entity).inventory
 							.clearMatchingItems(p -> new ItemStack(BatteryCellsItem.block, (int) (1)).getItem() == p.getItem(), (int) 1);
@@ -75,7 +75,7 @@ public class TeleportToggleTeleportChanceProcedure extends MiningmanniesModEleme
 						return tileEntity.getTileData().getString(tag);
 					return "";
 				}
-			}.getValue(new BlockPos((int) x, (int) y, (int) z), "ownerName"))) + "" + (" mmmanni teleport chance is set to: ") + ""
+			}.getValue(new BlockPos((int) x, (int) y, (int) z), "ownerName"))) + "" + (" Manni  teleport chance is set to: ") + ""
 					+ ((MiningmanniesModVariables.ManniTeleportChance)))), (false));
 		}
 	}

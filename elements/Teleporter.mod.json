@@ -30,7 +30,7 @@
     "creativeTab": {
       "value": "CUSTOM:MiningMannies"
     },
-    "destroyTool": "shovel",
+    "destroyTool": "Not specified",
     "customDrop": {
       "value": "Blocks.AIR"
     },
@@ -63,7 +63,7 @@
     },
     "luminance": 0.0,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "breakHarvestLevel": 0,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"

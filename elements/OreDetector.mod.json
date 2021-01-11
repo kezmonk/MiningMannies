@@ -29,7 +29,7 @@
     ],
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
-    "onRightClickedInAir": {
+    "onRightClickedOnBlock": {
       "name": "OreDetectorRightClickedInAir"
     },
     "onCrafted": {

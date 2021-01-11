@@ -2865,6 +2865,270 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "make_steel_block"
+    },
+    {
+      "name": "Seeker1UpdateTickBelowAndDig",
+      "type": "procedure",
+      "sortid": 157,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "seeker_1_update_tick_below_and_dig",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "UpdateSeekerTickLevel1AndDig",
+      "type": "procedure",
+      "sortid": 158,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "update_seeker_tick_level_1_and_dig",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Seeker2UpdateTickBelowAndDig",
+      "type": "procedure",
+      "sortid": 160,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "seeker_2_update_tick_below_and_dig",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Seeker3UpdateTickBelowAndDig",
+      "type": "procedure",
+      "sortid": 161,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "seeker_3_update_tick_below_and_dig",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Seeker4UpdateTickBelowAndDig",
+      "type": "procedure",
+      "sortid": 162,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "seeker_4_update_tick_below_and_dig",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "UpdateSeekerTickLevel2AndDig",
+      "type": "procedure",
+      "sortid": 163,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "update_seeker_tick_level_2_and_dig",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "UpdateSeekerTickLevel3AndDig",
+      "type": "procedure",
+      "sortid": 164,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "update_seeker_tick_level_3_and_dig",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "UpdateSeekerTickLevel4AndDig",
+      "type": "procedure",
+      "sortid": 165,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "update_seeker_tick_level_4_and_dig",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -3004,13 +3268,13 @@
       "advancements.heal_mannis_adv.title": "Heal Mannis",
       "item.miningmannies.mining_manni_slot_44": "Mining Manni Phase 4.4 Spawn Egg",
       "item.miningmannies.mining_manni_slot_45": "Mining Manni Phase 4.5 Spawn Egg",
-      "advancements.make_metal_detector_adv.title": "Make a Metal Detector",
       "item.miningmannies.mining_manni_slot_42": "Mining Manni Phase 4.2 Spawn Egg",
+      "advancements.make_metal_detector_adv.title": "Make a Metal Detector",
       "item.miningmannies.mining_manni_slot_43": "Mining Manni Phase 4.3 Spawn Egg",
       "item.miningmannies.mining_manni_slot_40": "Mining Manni Phase 4.0 Spawn Egg",
-      "advancements.make_own_lapis_ore.descr": "Make a lapis ore to program a manni",
-      "advancements.evolve_mannis_even_faster_adv.title": "Evolve Mannis Even Faster!",
       "item.miningmannies.mining_manni_slot_41": "Mining Manni Phase 4.1 Spawn Egg",
+      "advancements.evolve_mannis_even_faster_adv.title": "Evolve Mannis Even Faster!",
+      "advancements.make_own_lapis_ore.descr": "Make a lapis ore to program a manni",
       "advancements.glowing_effect_adv.title": "Glowing Effect",
       "item.miningmannies.mining_manni_slot_35": "Mining Manni Phase 3.5 Spawn Egg",
       "advancements.make_teleporter_challenge.title": "Make a Mining Manni Teleporter",
@@ -3039,8 +3303,8 @@
       "entity.miningmannies.mining_manni_slot_32": "Mining Manni Phase 3.2",
       "entity.miningmannies.mining_manni_slot_30": "Mining Manni Phase 3.0",
       "advancements.toggle_dig_direction_adv.title": "Toggle Dig Direction",
-      "advancements.toggle_dig_direction_adv.descr": "Try in the left hand and click on a Manni",
       "advancements.manni_fire_resistance_adv.title": "Manni Fire Resistance",
+      "advancements.toggle_dig_direction_adv.descr": "Try in the left hand and click on a Manni",
       "item.miningmannies.spawn_egg_seeker_level_2": "Spawn Egg Seeker Phase 2",
       "item.miningmannies.spawn_egg_seeker_level_1": "Spawn Egg Seeker Phase 1",
       "advancements.make_own_coal_ore.title": "Make Own Coal Ore",
@@ -3117,7 +3381,7 @@
   "workspaceSettings": {
     "modid": "miningmannies",
     "modName": "MiningMannies",
-    "version": "1.1.2",
+    "version": "2.0.0",
     "description": "Use Mining Mannies to dig and collect any type of block.",
     "author": "Kezmonk, MCreator",
     "websiteURL": "https://mcreator.net/modification/67670/mining-mannies",

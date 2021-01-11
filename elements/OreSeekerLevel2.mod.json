@@ -95,7 +95,7 @@
       "name": "RightClickSet4parameters"
     },
     "onMobTickUpdate": {
-      "name": "UpdateSeekerTickLevel2"
+      "name": "UpdateSeekerTickLevel2AndDig"
     },
     "onPlayerCollidesWith": {
       "name": "OnCollisionWithPlayerUpdateName"

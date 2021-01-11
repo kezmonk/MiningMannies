@@ -46,7 +46,7 @@ public class TeleporterBlockAddedProcedure extends MiningmanniesModElements.ModE
 			TileEntity _tileEntity = world.getTileEntity(_bp);
 			BlockState _bs = world.getBlockState(_bp);
 			if (_tileEntity != null)
-				_tileEntity.getTileData().putDouble("teleportChance", 0);
+				_tileEntity.getTileData().putDouble("teleportChance", Math.round(((MiningmanniesModVariables.ManniTeleportChance) * 100)));
 			world.getWorld().notifyBlockUpdate(_bp, _bs, _bs, 3);
 		}
 		if (!world.getWorld().isRemote) {
@@ -76,7 +76,6 @@ public class TeleporterBlockAddedProcedure extends MiningmanniesModElements.ModE
 		MiningmanniesModVariables.XposManniDestination = (double) 0;
 		MiningmanniesModVariables.YposManniDestination = (double) 0;
 		MiningmanniesModVariables.ZposManniDestination = (double) 0;
-		MiningmanniesModVariables.ManniTeleportChance = (double) 0;
 		if (!world.getWorld().isRemote) {
 			BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 			TileEntity _tileEntity = world.getTileEntity(_bp);

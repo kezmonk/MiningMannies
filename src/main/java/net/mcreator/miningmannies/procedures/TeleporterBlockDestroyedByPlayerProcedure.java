@@ -2,8 +2,11 @@ package net.mcreator.miningmannies.procedures;
 
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.item.ItemStack;
+import net.minecraft.entity.item.ItemEntity;
 import net.minecraft.block.Blocks;
 
+import net.mcreator.miningmannies.block.TeleporterBlock;
 import net.mcreator.miningmannies.MiningmanniesModVariables;
 import net.mcreator.miningmannies.MiningmanniesModElements;
 
@@ -38,10 +41,10 @@ public class TeleporterBlockDestroyedByPlayerProcedure extends MiningmanniesModE
 		IWorld world = (IWorld) dependencies.get("world");
 		double xx = 0;
 		double zz = 0;
+		double i = 0;
 		MiningmanniesModVariables.XposManniDestination = (double) 0;
 		MiningmanniesModVariables.YposManniDestination = (double) 0;
 		MiningmanniesModVariables.ZposManniDestination = (double) 0;
-		MiningmanniesModVariables.ManniTeleportChance = (double) 0;
 		xx = (double) (-3);
 		for (int index0 = 0; index0 < (int) (2); index0++) {
 			zz = (double) (-3);
@@ -65,6 +68,16 @@ public class TeleporterBlockDestroyedByPlayerProcedure extends MiningmanniesModE
 				xx = (double) ((xx) + 1);
 			}
 			zz = (double) 3;
+		}
+		i = (double) Math.random();
+		if ((world.getWorld().isRemote)) {
+			if (((MiningmanniesModVariables.ManniTeleportChance) >= (i))) {
+				if (!world.getWorld().isRemote) {
+					ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, (1 + y), z, new ItemStack(TeleporterBlock.block, (int) (1)));
+					entityToSpawn.setPickupDelay(10);
+					world.addEntity(entityToSpawn);
+				}
+			}
 		}
 	}
 }

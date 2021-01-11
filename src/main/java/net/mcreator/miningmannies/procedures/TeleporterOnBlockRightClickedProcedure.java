@@ -120,14 +120,6 @@ public class TeleporterOnBlockRightClickedProcedure extends MiningmanniesModElem
 					return -1;
 				}
 			}.getValue(new BlockPos((int) x, (int) y, (int) z), "ZposDestination"));
-			MiningmanniesModVariables.ManniTeleportChance = (double) ((new Object() {
-				public double getValue(BlockPos pos, String tag) {
-					TileEntity tileEntity = world.getTileEntity(pos);
-					if (tileEntity != null)
-						return tileEntity.getTileData().getDouble(tag);
-					return -1;
-				}
-			}.getValue(new BlockPos((int) x, (int) y, (int) z), "teleportChance")) / 100);
 		} else {
 			if ((((new Object() {
 				public String getValue(BlockPos pos, String tag) {
@@ -185,14 +177,6 @@ public class TeleporterOnBlockRightClickedProcedure extends MiningmanniesModElem
 						return -1;
 					}
 				}.getValue(new BlockPos((int) x, (int) y, (int) z), "ZposDestination"));
-				MiningmanniesModVariables.ManniTeleportChance = (double) (new Object() {
-					public double getValue(BlockPos pos, String tag) {
-						TileEntity tileEntity = world.getTileEntity(pos);
-						if (tileEntity != null)
-							return tileEntity.getTileData().getDouble(tag);
-						return -1;
-					}
-				}.getValue(new BlockPos((int) x, (int) y, (int) z), "teleportChance"));
 				MiningmanniesModVariables.ManniTeleportChance = (double) ((new Object() {
 					public double getValue(BlockPos pos, String tag) {
 						TileEntity tileEntity = world.getTileEntity(pos);

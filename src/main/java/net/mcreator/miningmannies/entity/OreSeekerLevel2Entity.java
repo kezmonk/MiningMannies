@@ -59,7 +59,7 @@ import net.minecraft.client.renderer.model.ModelRenderer;
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.entity.MobRenderer;
 
-import net.mcreator.miningmannies.procedures.UpdateSeekerTickLevel2Procedure;
+import net.mcreator.miningmannies.procedures.UpdateSeekerTickLevel2AndDigProcedure;
 import net.mcreator.miningmannies.procedures.SpawnManniSetNBTSProcedure;
 import net.mcreator.miningmannies.procedures.RightClickSet4parametersProcedure;
 import net.mcreator.miningmannies.procedures.OnCollisionWithPlayerUpdateNameProcedure;
@@ -274,7 +274,7 @@ public class OreSeekerLevel2Entity extends MiningmanniesModElements.ModElement {
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				UpdateSeekerTickLevel2Procedure.executeProcedure($_dependencies);
+				UpdateSeekerTickLevel2AndDigProcedure.executeProcedure($_dependencies);
 			}
 		}
 
