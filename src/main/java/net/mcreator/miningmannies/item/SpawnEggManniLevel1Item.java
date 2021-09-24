@@ -28,7 +28,7 @@ public class SpawnEggManniLevel1Item extends MiningmanniesModElements.ModElement
 	@ObjectHolder("miningmannies:spawn_egg_manni_level_1")
 	public static final Item block = null;
 	public SpawnEggManniLevel1Item(MiningmanniesModElements instance) {
-		super(instance, 34);
+		super(instance, 37);
 	}
 
 	@Override

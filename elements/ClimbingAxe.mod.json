@@ -7,7 +7,8 @@
     "customModelName": "Normal",
     "name": "Climbing Axe",
     "specialInfo": [
-      "You need two to climb"
+      "You need two to climb",
+      "one to break your fall"
     ],
     "creativeTab": {
       "value": "TOOLS"
@@ -24,6 +25,9 @@
     "repairItems": [
       {
         "value": "Items.IRON_INGOT"
+      },
+      {
+        "value": "CUSTOM:SteelIngot"
       }
     ],
     "stayInGridWhenCrafting": false,

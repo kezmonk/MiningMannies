@@ -43,7 +43,6 @@ import net.minecraft.inventory.container.Container;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.TemptGoal;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
@@ -56,6 +55,7 @@ import net.minecraft.entity.ILivingEntityData;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.CreatureEntity;
 import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.client.renderer.model.ModelRenderer;
@@ -85,14 +85,14 @@ import com.mojang.blaze3d.matrix.MatrixStack;
 public class MiningManniSlot10Entity extends MiningmanniesModElements.ModElement {
 	public static EntityType entity = null;
 	public MiningManniSlot10Entity(MiningmanniesModElements instance) {
-		super(instance, 5);
+		super(instance, 6);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
 	@Override
 	public void initElements() {
-		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER).setShouldReceiveVelocityUpdates(true)
-				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1.8f)).build("mining_manni_slot_10")
+		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.CREATURE).setShouldReceiveVelocityUpdates(true)
+				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 0.6f)).build("mining_manni_slot_10")
 						.setRegistryName("mining_manni_slot_10");
 		elements.entities.add(() -> entity);
 		elements.items.add(() -> new SpawnEggItem(entity, -13382656, -10079488, new Item.Properties().group(MiningManniesItemGroup.tab))
@@ -103,7 +103,7 @@ public class MiningManniSlot10Entity extends MiningmanniesModElements.ModElement
 	@OnlyIn(Dist.CLIENT)
 	public void registerModels(ModelRegistryEvent event) {
 		RenderingRegistry.registerEntityRenderingHandler(entity, renderManager -> {
-			return new MobRenderer(renderManager, new ModelMiningManniBaby(), 0.5f) {
+			return new MobRenderer(renderManager, new ModelMiningManniBaby(), 0.6f) {
 				@Override
 				public ResourceLocation getEntityTexture(Entity entity) {
 					return new ResourceLocation("miningmannies:textures/miningmannibaby.png");
@@ -111,7 +111,7 @@ public class MiningManniSlot10Entity extends MiningmanniesModElements.ModElement
 			};
 		});
 	}
-	public static class CustomEntity extends MonsterEntity {
+	public static class CustomEntity extends CreatureEntity {
 		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
 			this(entity, world);
 		}

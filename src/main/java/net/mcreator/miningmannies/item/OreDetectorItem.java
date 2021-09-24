@@ -21,9 +21,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.miningmannies.procedures.OreDetectorRightClickedInAirProcedure;
 import net.mcreator.miningmannies.procedures.OreDetectorItemIsCraftedsmeltedProcedure;
-import net.mcreator.miningmannies.procedures.OreDetectorEntitySwingsItemProcedure;
 import net.mcreator.miningmannies.MiningmanniesModElements;
 
 import java.util.Map;
@@ -37,7 +35,7 @@ public class OreDetectorItem extends MiningmanniesModElements.ModElement {
 	@ObjectHolder("miningmannies:ore_detector")
 	public static final Item block = null;
 	public OreDetectorItem(MiningmanniesModElements instance) {
-		super(instance, 30);
+		super(instance, 31);
 	}
 
 	@Override
@@ -63,13 +61,7 @@ public class OreDetectorItem extends MiningmanniesModElements.ModElement {
 				ItemStack itemstack = context.getItem();
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();
-					$_dependencies.put("entity", entity);
-					$_dependencies.put("itemstack", itemstack);
-					$_dependencies.put("x", x);
-					$_dependencies.put("y", y);
-					$_dependencies.put("z", z);
-					$_dependencies.put("world", world);
-					OreDetectorRightClickedInAirProcedure.executeProcedure($_dependencies);
+					OreDetectorightClickAirscanALLProcedure.executeProcedure($_dependencies);
 				}
 				return retval;
 			}
@@ -96,9 +88,7 @@ public class OreDetectorItem extends MiningmanniesModElements.ModElement {
 				World world = entity.world;
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();
-					$_dependencies.put("entity", entity);
-					$_dependencies.put("itemstack", itemstack);
-					OreDetectorEntitySwingsItemProcedure.executeProcedure($_dependencies);
+					OreDetectorEntitySwingItemscanALLProcedure.executeProcedure($_dependencies);
 				}
 				return retval;
 			}

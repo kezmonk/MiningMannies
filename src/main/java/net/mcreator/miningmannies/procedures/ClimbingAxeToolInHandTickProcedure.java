@@ -10,7 +10,7 @@ import java.util.Map;
 @MiningmanniesModElements.ModElement.Tag
 public class ClimbingAxeToolInHandTickProcedure extends MiningmanniesModElements.ModElement {
 	public ClimbingAxeToolInHandTickProcedure(MiningmanniesModElements instance) {
-		super(instance, 150);
+		super(instance, 152);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -26,7 +26,7 @@ public class ClimbingAxeToolInHandTickProcedure extends MiningmanniesModElements
 		ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
 		if ((((itemstack).getOrCreateTag().getBoolean("climbing")) == (true))) {
 			(itemstack).getOrCreateTag().putDouble("timer", (((itemstack).getOrCreateTag().getDouble("timer")) + 1));
-			if ((((itemstack).getOrCreateTag().getDouble("timer")) >= 10)) {
+			if ((((itemstack).getOrCreateTag().getDouble("timer")) >= ((itemstack).getOrCreateTag().getDouble("interval")))) {
 				entity.setMotion(0, 0, 0);
 				(itemstack).getOrCreateTag().putBoolean("climbing", (false));
 				(itemstack).getOrCreateTag().putDouble("timer", 0);

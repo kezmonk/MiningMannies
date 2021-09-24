@@ -46,7 +46,7 @@ import java.util.Map;
 @MiningmanniesModElements.ModElement.Tag
 public class SpawnManniSetNBTSProcedure extends MiningmanniesModElements.ModElement {
 	public SpawnManniSetNBTSProcedure(MiningmanniesModElements instance) {
-		super(instance, 67);
+		super(instance, 70);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -358,6 +358,48 @@ public class SpawnManniSetNBTSProcedure extends MiningmanniesModElements.ModElem
 				MinecraftServer mcserv = ServerLifecycleHooks.getCurrentServer();
 				if (mcserv != null)
 					mcserv.getPlayerList().sendMessage(new StringTextComponent("Seeker Level 2"));
+			}
+			entity.getPersistentData().putDouble("maxItemsInSlot1", 1);
+			entity.getPersistentData().putDouble("timer", 0);
+			entity.getPersistentData().putDouble("timerSpeed", (MiningmanniesModVariables.MiningBlockTimerSpeed));
+			entity.getPersistentData().putDouble("digDownChance", (MiningmanniesModVariables.ManniBlockDigChance));
+			{
+				final ItemStack _setstack = new ItemStack(
+						(ForgeRegistries.ITEMS.getValue(new ResourceLocation((MiningmanniesModVariables.MiningBlockItemNameSlot0)))), (int) (1));
+				final int _sltid = (int) (0);
+				_setstack.setCount((int) 1);
+				entity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+					if (capability instanceof IItemHandlerModifiable) {
+						((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
+					}
+				});
+			}
+			entity.setCustomName(new StringTextComponent(((new Object() {
+				public ItemStack getItemStack(int sltid, Entity entity) {
+					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+					entity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+						_retval.set(capability.getStackInSlot(sltid).copy());
+					});
+					return _retval.get();
+				}
+			}.getItemStack((int) (0), entity)).getDisplayName().getString())));
+			if ((!(((MiningmanniesModVariables.MiningBlockOwner)).equals("")))) {
+				entity.getPersistentData().putString("ownerName", (MiningmanniesModVariables.MiningBlockOwner));
+				entity.getPersistentData().putBoolean("hasOwner", (true));
+			} else {
+				entity.getPersistentData().putBoolean("hasOwner", (false));
+				entity.getPersistentData().putString("ownerName", "");
+			}
+			MiningmanniesModVariables.MiningBlockItemNameSlot0 = (String) "minecraft:air";
+			MiningmanniesModVariables.MiningBlockOwner = (String) "";
+			MiningmanniesModVariables.MiningBlockTimerSpeed = (double) 1;
+			MiningmanniesModVariables.ManniBlockDigChance = (double) 0.5;
+		}
+		if ((entity instanceof OreSeekerLevel3Entity.CustomEntity)) {
+			{
+				MinecraftServer mcserv = ServerLifecycleHooks.getCurrentServer();
+				if (mcserv != null)
+					mcserv.getPlayerList().sendMessage(new StringTextComponent("Seeker Level 3 "));
 			}
 			entity.getPersistentData().putDouble("maxItemsInSlot1", 1);
 			entity.getPersistentData().putDouble("timer", 0);

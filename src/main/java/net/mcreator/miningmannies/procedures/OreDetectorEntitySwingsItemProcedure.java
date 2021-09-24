@@ -14,7 +14,7 @@ import java.util.Map;
 @MiningmanniesModElements.ModElement.Tag
 public class OreDetectorEntitySwingsItemProcedure extends MiningmanniesModElements.ModElement {
 	public OreDetectorEntitySwingsItemProcedure(MiningmanniesModElements instance) {
-		super(instance, 89);
+		super(instance, 92);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

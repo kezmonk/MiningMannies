@@ -13,7 +13,7 @@ import net.mcreator.miningmannies.MiningmanniesModElements;
 @MiningmanniesModElements.ModElement.Tag
 public class MiningManniesItemGroup extends MiningmanniesModElements.ModElement {
 	public MiningManniesItemGroup(MiningmanniesModElements instance) {
-		super(instance, 31);
+		super(instance, 34);
 	}
 
 	@Override

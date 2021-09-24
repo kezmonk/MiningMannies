@@ -33,7 +33,7 @@ import java.util.Collections;
 @MiningmanniesModElements.ModElement.Tag
 public class UpdateTickDigBelowSlot2Procedure extends MiningmanniesModElements.ModElement {
 	public UpdateTickDigBelowSlot2Procedure(MiningmanniesModElements instance) {
-		super(instance, 76);
+		super(instance, 79);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -101,15 +101,18 @@ public class UpdateTickDigBelowSlot2Procedure extends MiningmanniesModElements.M
 						}
 					}.toBlock((ItemInSlot0))).getBlock())) {
 				entity.setMotion(0, 0, 0);
-				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
-					world.getWorld().getServer().getCommandManager().handleCommand(
-							new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
-									new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
-							(("/tell ") + "" + ((entity.getPersistentData().getString("ownerName"))) + "" + (" Found ") + ""
-									+ (((ItemInSlot0).getDisplayName().getString())) + "" + (" at: X ") + "" + (Math.floor(x)) + "" + (" Y ") + ""
-									+ (Math.round((y - 1))) + "" + (" Z ") + "" + (Math.floor(z))));
+				if ((MiningmanniesModVariables.ManniChatter)) {
+					if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
+						world.getWorld().getServer().getCommandManager().handleCommand(
+								new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
+										new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
+								(("/tell ") + "" + ((entity.getPersistentData().getString("ownerName"))) + "" + (" Found ") + ""
+										+ (((ItemInSlot0).getDisplayName().getString())) + "" + (" at: X ") + "" + (Math.floor(x)) + "" + (" Y ") + ""
+										+ (Math.round((y - 1))) + "" + (" Z ") + "" + (Math.floor(z))));
+					}
 				}
-				if (((((ItemInSlot1)).getCount()) < (entity.getPersistentData().getDouble("maxItemsInSlot1")))) {
+				if (((((ItemInSlot1)).getCount()) < ((entity.getPersistentData().getDouble("maxItemsInSlot1"))
+						/ (4 * (MiningmanniesModVariables.ManniTeleportChance))))) {
 					world.playEvent(2001, new BlockPos((int) Math.floor(x), (int) (y - 1), (int) Math.floor(z)),
 							Block.getStateId(world.getBlockState(new BlockPos((int) Math.floor(x), (int) (y - 1), (int) Math.floor(z)))));
 					world.setBlockState(new BlockPos((int) Math.floor(x), (int) (y - 1), (int) Math.floor(z)), Blocks.AIR.getDefaultState(), 3);
@@ -177,12 +180,15 @@ public class UpdateTickDigBelowSlot2Procedure extends MiningmanniesModElements.M
 											}
 										});
 									}
-									if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
-										world.getWorld().getServer().getCommandManager().handleCommand(
-												new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
-														new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
-												(("/tell ") + "" + ((entity.getPersistentData().getString("ownerName"))) + "" + ("delivered ") + ""
-														+ (((ItemInSlot0).getDisplayName().getString()))));
+									if ((MiningmanniesModVariables.ManniChatter)) {
+										if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
+											world.getWorld().getServer().getCommandManager().handleCommand(
+													new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4,
+															"", new StringTextComponent(""), world.getWorld().getServer(), null)
+																	.withFeedbackDisabled(),
+													(("/tell ") + "" + ((entity.getPersistentData().getString("ownerName"))) + "" + ("delivered ")
+															+ "" + (((ItemInSlot0).getDisplayName().getString()))));
+										}
 									}
 								}
 							}

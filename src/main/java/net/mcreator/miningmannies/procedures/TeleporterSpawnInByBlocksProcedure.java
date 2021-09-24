@@ -25,7 +25,7 @@ import java.util.HashMap;
 @MiningmanniesModElements.ModElement.Tag
 public class TeleporterSpawnInByBlocksProcedure extends MiningmanniesModElements.ModElement {
 	public TeleporterSpawnInByBlocksProcedure(MiningmanniesModElements instance) {
-		super(instance, 72);
+		super(instance, 75);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

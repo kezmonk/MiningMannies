@@ -38,7 +38,8 @@
       "miningmannies:make_grass_block",
       "miningmannies:make_dirt_ffrom_grass_block",
       "miningmannies:make_dry_grass_block",
-      "miningmannies:make_cobblestone_from_stone"
+      "miningmannies:make_cobblestone_from_stone",
+      "miningmannies:craft_ore_detector"
     ]
   }
 }

@@ -16,7 +16,7 @@ import java.util.Map;
 @MiningmanniesModElements.ModElement.Tag
 public class TeleporterOnBlockRightClickedProcedure extends MiningmanniesModElements.ModElement {
 	public TeleporterOnBlockRightClickedProcedure(MiningmanniesModElements instance) {
-		super(instance, 57);
+		super(instance, 60);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

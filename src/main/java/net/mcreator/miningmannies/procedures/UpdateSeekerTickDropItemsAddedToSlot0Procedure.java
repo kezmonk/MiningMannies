@@ -10,7 +10,6 @@ import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.math.Vec2f;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.item.ItemEntity;
 import net.minecraft.entity.Entity;
@@ -26,7 +25,7 @@ import java.util.Map;
 @MiningmanniesModElements.ModElement.Tag
 public class UpdateSeekerTickDropItemsAddedToSlot0Procedure extends MiningmanniesModElements.ModElement {
 	public UpdateSeekerTickDropItemsAddedToSlot0Procedure(MiningmanniesModElements instance) {
-		super(instance, 118);
+		super(instance, 121);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -77,21 +76,21 @@ public class UpdateSeekerTickDropItemsAddedToSlot0Procedure extends Miningmannie
 					return _retval.get();
 				}
 			}.getItemStack((int) (0), entity));
-			if ((!(((ItemInSlot0).getItem() == new ItemStack(Items.COAL, (int) (1)).getItem()) || (((ItemInSlot0)
-					.getItem() == new ItemStack(Blocks.IRON_ORE, (int) (1)).getItem())
-					|| (((ItemInSlot0).getItem() == new ItemStack(Items.REDSTONE, (int) (1)).getItem()) || (((ItemInSlot0)
-							.getItem() == new ItemStack(Items.EMERALD, (int) (1)).getItem())
-							|| (((ItemInSlot0).getItem() == new ItemStack(Items.DIAMOND, (int) (1)).getItem())
-									|| (((ItemInSlot0).getItem() == new ItemStack(Items.LAPIS_LAZULI, (int) (1)).getItem())
-											|| (((ItemInSlot0).getItem() == new ItemStack(Items.QUARTZ, (int) (1)).getItem())
-													|| ((ItemInSlot0).getItem() == new ItemStack(Blocks.GOLD_ORE, (int) (1)).getItem())))))))))) {
+			if ((!(((ItemInSlot0).getItem() == new ItemStack(Blocks.WHITE_TULIP, (int) (1)).getItem()) || (((ItemInSlot0)
+					.getItem() == new ItemStack(Blocks.DANDELION, (int) (1)).getItem())
+					|| (((ItemInSlot0).getItem() == new ItemStack(Blocks.OXEYE_DAISY, (int) (1)).getItem()) || (((ItemInSlot0)
+							.getItem() == new ItemStack(Blocks.AZURE_BLUET, (int) (1)).getItem())
+							|| (((ItemInSlot0).getItem() == new ItemStack(Blocks.CORNFLOWER, (int) (1)).getItem())
+									|| (((ItemInSlot0).getItem() == new ItemStack(Blocks.LILAC, (int) (1)).getItem())
+											|| (((ItemInSlot0).getItem() == new ItemStack(Blocks.ROSE_BUSH, (int) (1)).getItem())
+													|| ((ItemInSlot0).getItem() == new ItemStack(Blocks.PEONY, (int) (1)).getItem())))))))))) {
 				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
 					world.getWorld().getServer().getCommandManager().handleCommand(
 							new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
 									new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
 							(("/tell ") + "" + ((entity.getPersistentData().getString("ownerName"))) + "" + (" Sorry ") + ""
 									+ ((entity.getPersistentData().getString("ownerName"))) + ""
-									+ (", I can only look for Ores using thier drops, so no thanks.")));
+									+ (", I can only look for Ores using thier flowers, so no thanks.")));
 				}
 				if (!world.getWorld().isRemote) {
 					ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, y, z,

@@ -34,7 +34,7 @@ import java.util.HashMap;
 @MiningmanniesModElements.ModElement.Tag
 public class UpdateTickLevel15finalProcedure extends MiningmanniesModElements.ModElement {
 	public UpdateTickLevel15finalProcedure(MiningmanniesModElements instance) {
-		super(instance, 88);
+		super(instance, 91);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -64,9 +64,8 @@ public class UpdateTickLevel15finalProcedure extends MiningmanniesModElements.Mo
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		if ((entity instanceof MiningManniSlot15Entity.CustomEntity)) {
-			entity.getPersistentData().putDouble("timer",
-					((entity.getPersistentData().getDouble("timer")) + (1 * (entity.getPersistentData().getDouble("timerSpeed")))));
-			if (((entity.getPersistentData().getDouble("timer")) > 3600)) {
+			entity.getPersistentData().putDouble("timer", ((entity.getPersistentData().getDouble("timer")) + 1));
+			if (((entity.getPersistentData().getDouble("timer")) > (3600 / (entity.getPersistentData().getDouble("timerSpeed"))))) {
 				if (!world.getWorld().isRemote) {
 					ItemEntity entityToSpawn = new ItemEntity(world.getWorld(),
 							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
@@ -119,6 +118,7 @@ public class UpdateTickLevel15finalProcedure extends MiningmanniesModElements.Mo
 								SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
 					world.addEntity(entityToSpawn);
 				}
+				return;
 			}
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
@@ -129,25 +129,27 @@ public class UpdateTickLevel15finalProcedure extends MiningmanniesModElements.Mo
 				$_dependencies.put("world", world);
 				UpdateTickDropItemsAddedToSlot0Procedure.executeProcedure($_dependencies);
 			}
-			if ((Math.random() < (entity.getPersistentData().getDouble("digDownChance")))) {
-				{
-					Map<String, Object> $_dependencies = new HashMap<>();
-					$_dependencies.put("entity", entity);
-					$_dependencies.put("x", x);
-					$_dependencies.put("y", y);
-					$_dependencies.put("z", z);
-					$_dependencies.put("world", world);
-					UpdateTickDigBelowSlot0Procedure.executeProcedure($_dependencies);
-				}
-			} else {
-				{
-					Map<String, Object> $_dependencies = new HashMap<>();
-					$_dependencies.put("entity", entity);
-					$_dependencies.put("x", x);
-					$_dependencies.put("y", y);
-					$_dependencies.put("z", z);
-					$_dependencies.put("world", world);
-					UpdateTickDigFrontSlot0Procedure.executeProcedure($_dependencies);
+			if ((((entity.getPersistentData().getDouble("timer")) % 20) == 0)) {
+				if ((Math.random() < (entity.getPersistentData().getDouble("digDownChance")))) {
+					{
+						Map<String, Object> $_dependencies = new HashMap<>();
+						$_dependencies.put("entity", entity);
+						$_dependencies.put("x", x);
+						$_dependencies.put("y", y);
+						$_dependencies.put("z", z);
+						$_dependencies.put("world", world);
+						UpdateTickDigBelowSlot0Procedure.executeProcedure($_dependencies);
+					}
+				} else {
+					{
+						Map<String, Object> $_dependencies = new HashMap<>();
+						$_dependencies.put("entity", entity);
+						$_dependencies.put("x", x);
+						$_dependencies.put("y", y);
+						$_dependencies.put("z", z);
+						$_dependencies.put("world", world);
+						UpdateTickDigFrontSlot0Procedure.executeProcedure($_dependencies);
+					}
 				}
 			}
 		}

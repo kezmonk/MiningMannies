@@ -28,7 +28,7 @@ public class SpawnEggSeekerLevel2Item extends MiningmanniesModElements.ModElemen
 	@ObjectHolder("miningmannies:spawn_egg_seeker_level_2")
 	public static final Item block = null;
 	public SpawnEggSeekerLevel2Item(MiningmanniesModElements instance) {
-		super(instance, 122);
+		super(instance, 125);
 	}
 
 	@Override

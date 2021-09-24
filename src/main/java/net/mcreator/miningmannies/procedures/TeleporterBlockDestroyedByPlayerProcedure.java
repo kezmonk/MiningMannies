@@ -1,9 +1,12 @@
 package net.mcreator.miningmannies.procedures;
 
 import net.minecraft.world.IWorld;
+import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.item.ItemStack;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.item.ItemEntity;
+import net.minecraft.entity.Entity;
 import net.minecraft.block.Blocks;
 
 import net.mcreator.miningmannies.block.TeleporterBlock;
@@ -15,10 +18,14 @@ import java.util.Map;
 @MiningmanniesModElements.ModElement.Tag
 public class TeleporterBlockDestroyedByPlayerProcedure extends MiningmanniesModElements.ModElement {
 	public TeleporterBlockDestroyedByPlayerProcedure(MiningmanniesModElements instance) {
-		super(instance, 92);
+		super(instance, 95);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
+		if (dependencies.get("entity") == null) {
+			System.err.println("Failed to load dependency entity for procedure TeleporterBlockDestroyedByPlayer!");
+			return;
+		}
 		if (dependencies.get("x") == null) {
 			System.err.println("Failed to load dependency x for procedure TeleporterBlockDestroyedByPlayer!");
 			return;
@@ -35,6 +42,7 @@ public class TeleporterBlockDestroyedByPlayerProcedure extends MiningmanniesModE
 			System.err.println("Failed to load dependency world for procedure TeleporterBlockDestroyedByPlayer!");
 			return;
 		}
+		Entity entity = (Entity) dependencies.get("entity");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
@@ -69,14 +77,26 @@ public class TeleporterBlockDestroyedByPlayerProcedure extends MiningmanniesModE
 			}
 			zz = (double) 3;
 		}
+		xx = (double) (-3);
+		for (int index4 = 0; index4 < (int) (7); index4++) {
+			zz = (double) (-3);
+			for (int index5 = 0; index5 < (int) (7); index5++) {
+				world.setBlockState(new BlockPos((int) (x + Math.round((xx))), (int) (y - 1), (int) (z + Math.round((zz)))),
+						Blocks.DIRT.getDefaultState(), 3);
+				zz = (double) ((zz) + 1);
+			}
+			xx = (double) ((xx) + 1);
+		}
 		i = (double) Math.random();
-		if ((world.getWorld().isRemote)) {
-			if (((MiningmanniesModVariables.ManniTeleportChance) >= (i))) {
-				if (!world.getWorld().isRemote) {
-					ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, (1 + y), z, new ItemStack(TeleporterBlock.block, (int) (1)));
-					entityToSpawn.setPickupDelay(10);
-					world.addEntity(entityToSpawn);
-				}
+		if (entity instanceof PlayerEntity && !entity.world.isRemote) {
+			((PlayerEntity) entity).sendStatusMessage(new StringTextComponent((("You have ") + "" + ((MiningmanniesModVariables.ManniTeleportChance))
+					+ "" + (" energy for revoery chance. Attempting recovery over....") + "" + ((i)))), (false));
+		}
+		if (((MiningmanniesModVariables.ManniTeleportChance) >= (i))) {
+			if (!world.getWorld().isRemote) {
+				ItemEntity entityToSpawn = new ItemEntity(world.getWorld(), x, (1 + y), z, new ItemStack(TeleporterBlock.block, (int) (1)));
+				entityToSpawn.setPickupDelay(10);
+				world.addEntity(entityToSpawn);
 			}
 		}
 	}

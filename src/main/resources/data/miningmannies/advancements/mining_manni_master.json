@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "miningmannies:trophy"
+    },
+    "title": {
+      "translate": "advancements.mining_manni_master.title"
+    },
+    "description": {
+      "translate": "advancements.mining_manni_master.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "mining_manni_master": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 200,
+    "loot": [
+      "miningmannies:mod/mining_master_loot"
+    ]
+  },
+  "parent": "miningmannies:level_4_mannies"
+}

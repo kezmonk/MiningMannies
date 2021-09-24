@@ -12,7 +12,7 @@ import java.util.HashMap;
 @MiningmanniesModElements.ModElement.Tag
 public class UpdateTickLevel45Procedure extends MiningmanniesModElements.ModElement {
 	public UpdateTickLevel45Procedure(MiningmanniesModElements instance) {
-		super(instance, 137);
+		super(instance, 140);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -78,79 +78,81 @@ public class UpdateTickLevel45Procedure extends MiningmanniesModElements.ModElem
 				$_dependencies.put("world", world);
 				UpdateTickDropItemsAddedToSlot6Procedure.executeProcedure($_dependencies);
 			}
-			if ((Math.random() < (entity.getPersistentData().getDouble("digDownChance")))) {
-				{
-					Map<String, Object> $_dependencies = new HashMap<>();
-					$_dependencies.put("entity", entity);
-					$_dependencies.put("x", x);
-					$_dependencies.put("y", y);
-					$_dependencies.put("z", z);
-					$_dependencies.put("world", world);
-					UpdateTickDigBelowSlot0Procedure.executeProcedure($_dependencies);
-				}
-				{
-					Map<String, Object> $_dependencies = new HashMap<>();
-					$_dependencies.put("entity", entity);
-					$_dependencies.put("x", x);
-					$_dependencies.put("y", y);
-					$_dependencies.put("z", z);
-					$_dependencies.put("world", world);
-					UpdateTickDigBelowSlot2Procedure.executeProcedure($_dependencies);
-				}
-				{
-					Map<String, Object> $_dependencies = new HashMap<>();
-					$_dependencies.put("entity", entity);
-					$_dependencies.put("x", x);
-					$_dependencies.put("y", y);
-					$_dependencies.put("z", z);
-					$_dependencies.put("world", world);
-					UpdateTickDigBelowSlot4Procedure.executeProcedure($_dependencies);
-				}
-				{
-					Map<String, Object> $_dependencies = new HashMap<>();
-					$_dependencies.put("entity", entity);
-					$_dependencies.put("x", x);
-					$_dependencies.put("y", y);
-					$_dependencies.put("z", z);
-					$_dependencies.put("world", world);
-					UpdateTickDigBelowSlot6Procedure.executeProcedure($_dependencies);
-				}
-			} else {
-				{
-					Map<String, Object> $_dependencies = new HashMap<>();
-					$_dependencies.put("entity", entity);
-					$_dependencies.put("x", x);
-					$_dependencies.put("y", y);
-					$_dependencies.put("z", z);
-					$_dependencies.put("world", world);
-					UpdateTickDigFrontSlot0Procedure.executeProcedure($_dependencies);
-				}
-				{
-					Map<String, Object> $_dependencies = new HashMap<>();
-					$_dependencies.put("entity", entity);
-					$_dependencies.put("x", x);
-					$_dependencies.put("y", y);
-					$_dependencies.put("z", z);
-					$_dependencies.put("world", world);
-					UpdateTickDigFrontSlot2Procedure.executeProcedure($_dependencies);
-				}
-				{
-					Map<String, Object> $_dependencies = new HashMap<>();
-					$_dependencies.put("entity", entity);
-					$_dependencies.put("x", x);
-					$_dependencies.put("y", y);
-					$_dependencies.put("z", z);
-					$_dependencies.put("world", world);
-					UpdateTickDigFrontSlot4Procedure.executeProcedure($_dependencies);
-				}
-				{
-					Map<String, Object> $_dependencies = new HashMap<>();
-					$_dependencies.put("entity", entity);
-					$_dependencies.put("x", x);
-					$_dependencies.put("y", y);
-					$_dependencies.put("z", z);
-					$_dependencies.put("world", world);
-					UpdateTickDigFrontSlot6Procedure.executeProcedure($_dependencies);
+			if ((((entity.getPersistentData().getDouble("timer")) % 20) == 0)) {
+				if ((Math.random() < (entity.getPersistentData().getDouble("digDownChance")))) {
+					{
+						Map<String, Object> $_dependencies = new HashMap<>();
+						$_dependencies.put("entity", entity);
+						$_dependencies.put("x", x);
+						$_dependencies.put("y", y);
+						$_dependencies.put("z", z);
+						$_dependencies.put("world", world);
+						UpdateTickDigBelowSlot0Procedure.executeProcedure($_dependencies);
+					}
+					{
+						Map<String, Object> $_dependencies = new HashMap<>();
+						$_dependencies.put("entity", entity);
+						$_dependencies.put("x", x);
+						$_dependencies.put("y", y);
+						$_dependencies.put("z", z);
+						$_dependencies.put("world", world);
+						UpdateTickDigBelowSlot2Procedure.executeProcedure($_dependencies);
+					}
+					{
+						Map<String, Object> $_dependencies = new HashMap<>();
+						$_dependencies.put("entity", entity);
+						$_dependencies.put("x", x);
+						$_dependencies.put("y", y);
+						$_dependencies.put("z", z);
+						$_dependencies.put("world", world);
+						UpdateTickDigBelowSlot4Procedure.executeProcedure($_dependencies);
+					}
+					{
+						Map<String, Object> $_dependencies = new HashMap<>();
+						$_dependencies.put("entity", entity);
+						$_dependencies.put("x", x);
+						$_dependencies.put("y", y);
+						$_dependencies.put("z", z);
+						$_dependencies.put("world", world);
+						UpdateTickDigBelowSlot6Procedure.executeProcedure($_dependencies);
+					}
+				} else {
+					{
+						Map<String, Object> $_dependencies = new HashMap<>();
+						$_dependencies.put("entity", entity);
+						$_dependencies.put("x", x);
+						$_dependencies.put("y", y);
+						$_dependencies.put("z", z);
+						$_dependencies.put("world", world);
+						UpdateTickDigFrontSlot0Procedure.executeProcedure($_dependencies);
+					}
+					{
+						Map<String, Object> $_dependencies = new HashMap<>();
+						$_dependencies.put("entity", entity);
+						$_dependencies.put("x", x);
+						$_dependencies.put("y", y);
+						$_dependencies.put("z", z);
+						$_dependencies.put("world", world);
+						UpdateTickDigFrontSlot2Procedure.executeProcedure($_dependencies);
+					}
+					{
+						Map<String, Object> $_dependencies = new HashMap<>();
+						$_dependencies.put("entity", entity);
+						$_dependencies.put("x", x);
+						$_dependencies.put("y", y);
+						$_dependencies.put("z", z);
+						$_dependencies.put("world", world);
+						UpdateTickDigFrontSlot4Procedure.executeProcedure($_dependencies);
+					}
+					{
+						Map<String, Object> $_dependencies = new HashMap<>();
+						$_dependencies.put("entity", entity);
+						$_dependencies.put("x", x);
+						$_dependencies.put("y", y);
+						$_dependencies.put("z", z);
+						$_dependencies.put("world", world);
+						UpdateTickDigFrontSlot6Procedure.executeProcedure($_dependencies);
+					}
 				}
 			}
 		}

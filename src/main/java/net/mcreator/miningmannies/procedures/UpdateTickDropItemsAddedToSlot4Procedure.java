@@ -18,7 +18,7 @@ import java.util.Map;
 @MiningmanniesModElements.ModElement.Tag
 public class UpdateTickDropItemsAddedToSlot4Procedure extends MiningmanniesModElements.ModElement {
 	public UpdateTickDropItemsAddedToSlot4Procedure(MiningmanniesModElements instance) {
-		super(instance, 74);
+		super(instance, 77);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

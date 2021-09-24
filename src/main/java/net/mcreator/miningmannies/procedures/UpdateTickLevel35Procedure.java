@@ -9,9 +9,11 @@ import net.minecraft.world.IWorld;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.math.Vec2f;
+import net.minecraft.util.math.RayTraceContext;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.item.ItemStack;
+import net.minecraft.entity.item.ItemEntity;
 import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.ILivingEntityData;
@@ -31,7 +33,7 @@ import java.util.HashMap;
 @MiningmanniesModElements.ModElement.Tag
 public class UpdateTickLevel35Procedure extends MiningmanniesModElements.ModElement {
 	public UpdateTickLevel35Procedure(MiningmanniesModElements instance) {
-		super(instance, 132);
+		super(instance, 135);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -61,9 +63,21 @@ public class UpdateTickLevel35Procedure extends MiningmanniesModElements.ModElem
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		if ((entity instanceof MiningManniSlot35Entity.CustomEntity)) {
-			entity.getPersistentData().putDouble("timer",
-					((entity.getPersistentData().getDouble("timer")) + (1 * (entity.getPersistentData().getDouble("timerSpeed")))));
-			if (((entity.getPersistentData().getDouble("timer")) > 3600)) {
+			entity.getPersistentData().putDouble("timer", ((entity.getPersistentData().getDouble("timer")) + 1));
+			if (((entity.getPersistentData().getDouble("timer")) > (3600 / (entity.getPersistentData().getDouble("timerSpeed"))))) {
+				if (!world.getWorld().isRemote) {
+					ItemEntity entityToSpawn = new ItemEntity(world.getWorld(),
+							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+									entity.getEyePosition(1f).add(entity.getLook(1f).x * 1, entity.getLook(1f).y * 1, entity.getLook(1f).z * 1),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getX()),
+							y,
+							(entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+									entity.getEyePosition(1f).add(entity.getLook(1f).x * 1, entity.getLook(1f).y * 1, entity.getLook(1f).z * 1),
+									RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ()),
+							new ItemStack(SpawnEggSeekerLevel3Item.block, (int) (1)));
+					entityToSpawn.setPickupDelay(10);
+					world.addEntity(entityToSpawn);
+				}
 				MiningmanniesModVariables.MiningBlockItemNameSlot0 = (String) (ForgeRegistries.ITEMS.getKey((new Object() {
 					public ItemStack getItemStack(int sltid, Entity entity) {
 						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
@@ -167,61 +181,63 @@ public class UpdateTickLevel35Procedure extends MiningmanniesModElements.ModElem
 				$_dependencies.put("world", world);
 				UpdateTickDropItemsAddedToSlot4Procedure.executeProcedure($_dependencies);
 			}
-			if ((Math.random() < (entity.getPersistentData().getDouble("digDownChance")))) {
-				{
-					Map<String, Object> $_dependencies = new HashMap<>();
-					$_dependencies.put("entity", entity);
-					$_dependencies.put("x", x);
-					$_dependencies.put("y", y);
-					$_dependencies.put("z", z);
-					$_dependencies.put("world", world);
-					UpdateTickDigBelowSlot0Procedure.executeProcedure($_dependencies);
-				}
-				{
-					Map<String, Object> $_dependencies = new HashMap<>();
-					$_dependencies.put("entity", entity);
-					$_dependencies.put("x", x);
-					$_dependencies.put("y", y);
-					$_dependencies.put("z", z);
-					$_dependencies.put("world", world);
-					UpdateTickDigBelowSlot2Procedure.executeProcedure($_dependencies);
-				}
-				{
-					Map<String, Object> $_dependencies = new HashMap<>();
-					$_dependencies.put("entity", entity);
-					$_dependencies.put("x", x);
-					$_dependencies.put("y", y);
-					$_dependencies.put("z", z);
-					$_dependencies.put("world", world);
-					UpdateTickDigBelowSlot4Procedure.executeProcedure($_dependencies);
-				}
-			} else {
-				{
-					Map<String, Object> $_dependencies = new HashMap<>();
-					$_dependencies.put("entity", entity);
-					$_dependencies.put("x", x);
-					$_dependencies.put("y", y);
-					$_dependencies.put("z", z);
-					$_dependencies.put("world", world);
-					UpdateTickDigFrontSlot0Procedure.executeProcedure($_dependencies);
-				}
-				{
-					Map<String, Object> $_dependencies = new HashMap<>();
-					$_dependencies.put("entity", entity);
-					$_dependencies.put("x", x);
-					$_dependencies.put("y", y);
-					$_dependencies.put("z", z);
-					$_dependencies.put("world", world);
-					UpdateTickDigFrontSlot2Procedure.executeProcedure($_dependencies);
-				}
-				{
-					Map<String, Object> $_dependencies = new HashMap<>();
-					$_dependencies.put("entity", entity);
-					$_dependencies.put("x", x);
-					$_dependencies.put("y", y);
-					$_dependencies.put("z", z);
-					$_dependencies.put("world", world);
-					UpdateTickDigFrontSlot4Procedure.executeProcedure($_dependencies);
+			if ((((entity.getPersistentData().getDouble("timer")) % 20) == 0)) {
+				if ((Math.random() < (entity.getPersistentData().getDouble("digDownChance")))) {
+					{
+						Map<String, Object> $_dependencies = new HashMap<>();
+						$_dependencies.put("entity", entity);
+						$_dependencies.put("x", x);
+						$_dependencies.put("y", y);
+						$_dependencies.put("z", z);
+						$_dependencies.put("world", world);
+						UpdateTickDigBelowSlot0Procedure.executeProcedure($_dependencies);
+					}
+					{
+						Map<String, Object> $_dependencies = new HashMap<>();
+						$_dependencies.put("entity", entity);
+						$_dependencies.put("x", x);
+						$_dependencies.put("y", y);
+						$_dependencies.put("z", z);
+						$_dependencies.put("world", world);
+						UpdateTickDigBelowSlot2Procedure.executeProcedure($_dependencies);
+					}
+					{
+						Map<String, Object> $_dependencies = new HashMap<>();
+						$_dependencies.put("entity", entity);
+						$_dependencies.put("x", x);
+						$_dependencies.put("y", y);
+						$_dependencies.put("z", z);
+						$_dependencies.put("world", world);
+						UpdateTickDigBelowSlot4Procedure.executeProcedure($_dependencies);
+					}
+				} else {
+					{
+						Map<String, Object> $_dependencies = new HashMap<>();
+						$_dependencies.put("entity", entity);
+						$_dependencies.put("x", x);
+						$_dependencies.put("y", y);
+						$_dependencies.put("z", z);
+						$_dependencies.put("world", world);
+						UpdateTickDigFrontSlot0Procedure.executeProcedure($_dependencies);
+					}
+					{
+						Map<String, Object> $_dependencies = new HashMap<>();
+						$_dependencies.put("entity", entity);
+						$_dependencies.put("x", x);
+						$_dependencies.put("y", y);
+						$_dependencies.put("z", z);
+						$_dependencies.put("world", world);
+						UpdateTickDigFrontSlot2Procedure.executeProcedure($_dependencies);
+					}
+					{
+						Map<String, Object> $_dependencies = new HashMap<>();
+						$_dependencies.put("entity", entity);
+						$_dependencies.put("x", x);
+						$_dependencies.put("y", y);
+						$_dependencies.put("z", z);
+						$_dependencies.put("world", world);
+						UpdateTickDigFrontSlot4Procedure.executeProcedure($_dependencies);
+					}
 				}
 			}
 		}

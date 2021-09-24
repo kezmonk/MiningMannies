@@ -44,7 +44,7 @@
       "value": "AIR"
     },
     "tickRate": 10,
-    "tickRandomly": false,
+    "tickRandomly": true,
     "isReplaceable": true,
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
@@ -74,13 +74,13 @@
     "particleCondition": {
       "name": "ElectricFieldParticleSpawningCondition"
     },
-    "hasInventory": false,
+    "hasInventory": true,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
-    "inventorySize": 9,
+    "inventorySize": 1,
     "inventoryStackSize": 64,
-    "inventoryDropWhenDestroyed": true,
-    "inventoryComparatorPower": true,
+    "inventoryDropWhenDestroyed": false,
+    "inventoryComparatorPower": false,
     "inventoryOutSlotIDs": [],
     "inventoryInSlotIDs": [],
     "hasEnergyStorage": false,

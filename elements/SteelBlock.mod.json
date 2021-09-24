@@ -32,7 +32,7 @@
     },
     "destroyTool": "pickaxe",
     "customDrop": {
-      "value": "Items.IRON_INGOT"
+      "value": "Blocks.IRON_BLOCK"
     },
     "dropAmount": 1,
     "isBeaconBase": false,

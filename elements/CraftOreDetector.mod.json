@@ -10,13 +10,13 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Blocks.PISTON"
+        "value": "Blocks.LEVER"
       },
       {
-        "value": "Items.REDSTONE"
+        "value": "CUSTOM:SteelIngot"
       },
       {
-        "value": "Items.IRON_INGOT"
+        "value": "CUSTOM:SteelIngot"
       },
       {
         "value": ""

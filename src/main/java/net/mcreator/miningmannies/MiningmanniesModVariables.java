@@ -24,4 +24,5 @@ public class MiningmanniesModVariables {
 	public static double MiningBlockItemNumberSlot5 = 0;
 	public static String MiningBlockItemNameSlot6 = "minecraft:air";
 	public static double MiningBlockItemNumberSlot7 = 0;
+	public static boolean ManniChatter = true;
 }

@@ -15,7 +15,7 @@ public class SteelIngotItem extends MiningmanniesModElements.ModElement {
 	@ObjectHolder("miningmannies:steel_ingot")
 	public static final Item block = null;
 	public SteelIngotItem(MiningmanniesModElements instance) {
-		super(instance, 151);
+		super(instance, 33);
 	}
 
 	@Override

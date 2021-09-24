@@ -34,7 +34,7 @@ import java.util.Collections;
 @MiningmanniesModElements.ModElement.Tag
 public class UpdateTickDigFrontSlot6Procedure extends MiningmanniesModElements.ModElement {
 	public UpdateTickDigFrontSlot6Procedure(MiningmanniesModElements instance) {
-		super(instance, 81);
+		super(instance, 84);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -114,23 +114,27 @@ public class UpdateTickDigFrontSlot6Procedure extends MiningmanniesModElements.M
 															return Blocks.AIR.getDefaultState();
 														}
 													}.toBlock((ItemInSlot0))).getBlock())) {
-				if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
-					world.getWorld().getServer().getCommandManager().handleCommand(
-							new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
-									new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
-							(("/tell ") + "" + ((entity.getPersistentData().getString("ownerName"))) + "" + (" Found ") + ""
-									+ (((ItemInSlot0).getDisplayName().getString())) + "" + (" at: X ") + ""
-									+ (Math.floor((entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-											entity.getEyePosition(1f)
-													.add(entity.getLook(1f).x * 1, entity.getLook(1f).y * 1, entity.getLook(1f).z * 1),
-											RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getX())))
-									+ "" + (" Y ") + "" + (Math.round(y)) + "" + (" Z ") + ""
-									+ (Math.floor((entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
-											entity.getEyePosition(1f).add(entity.getLook(1f).x * 1, entity.getLook(1f).y * 1,
-													entity.getLook(1f).z * 1),
-											RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ())))));
+				if ((MiningmanniesModVariables.ManniChatter)) {
+					if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
+						world.getWorld().getServer().getCommandManager().handleCommand(
+								new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
+										new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
+								(("/tell ") + "" + ((entity.getPersistentData().getString("ownerName"))) + "" + (" Found ") + ""
+										+ (((ItemInSlot0).getDisplayName().getString())) + "" + (" at: X ") + "" + (Math.floor((entity.world
+												.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+														entity.getEyePosition(1f).add(entity.getLook(1f).x * 1, entity.getLook(1f).y * 1,
+																entity.getLook(1f).z * 1),
+														RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity))
+												.getPos().getX())))
+										+ "" + (" Y ") + "" + (Math.round(y)) + "" + (" Z ") + ""
+										+ (Math.floor((entity.world.rayTraceBlocks(new RayTraceContext(entity.getEyePosition(1f),
+												entity.getEyePosition(1f).add(entity.getLook(1f).x * 1, entity.getLook(1f).y * 1,
+														entity.getLook(1f).z * 1),
+												RayTraceContext.BlockMode.OUTLINE, RayTraceContext.FluidMode.NONE, entity)).getPos().getZ())))));
+					}
 				}
-				if (((((ItemInSlot1)).getCount()) < (entity.getPersistentData().getDouble("maxItemsInSlot1")))) {
+				if (((((ItemInSlot1)).getCount()) < ((entity.getPersistentData().getDouble("maxItemsInSlot1"))
+						/ (4 * (MiningmanniesModVariables.ManniTeleportChance))))) {
 					world.playEvent(2001, new BlockPos((int) Math.floor(x), (int) (y - 1), (int) Math.floor(z)),
 							Block.getStateId(world.getBlockState(new BlockPos((int) Math.floor(x), (int) (y - 1), (int) Math.floor(z)))));
 					world.setBlockState(
@@ -242,12 +246,15 @@ public class UpdateTickDigFrontSlot6Procedure extends MiningmanniesModElements.M
 											}
 										});
 									}
-									if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
-										world.getWorld().getServer().getCommandManager().handleCommand(
-												new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4, "",
-														new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
-												(("/tell ") + "" + ((entity.getPersistentData().getString("ownerName"))) + "" + ("delivered ") + ""
-														+ ((ForgeRegistries.ITEMS.getKey((ItemInSlot0).getItem()).toString()))));
+									if ((MiningmanniesModVariables.ManniChatter)) {
+										if (!world.getWorld().isRemote && world.getWorld().getServer() != null) {
+											world.getWorld().getServer().getCommandManager().handleCommand(
+													new CommandSource(ICommandSource.DUMMY, new Vec3d(x, y, z), Vec2f.ZERO, (ServerWorld) world, 4,
+															"", new StringTextComponent(""), world.getWorld().getServer(), null)
+																	.withFeedbackDisabled(),
+													(("/tell ") + "" + ((entity.getPersistentData().getString("ownerName"))) + "" + ("delivered ")
+															+ "" + ((ForgeRegistries.ITEMS.getKey((ItemInSlot0).getItem()).toString()))));
+										}
 									}
 								}
 							}

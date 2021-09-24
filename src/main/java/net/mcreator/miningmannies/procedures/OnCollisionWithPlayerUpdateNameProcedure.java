@@ -14,7 +14,7 @@ import java.util.Map;
 @MiningmanniesModElements.ModElement.Tag
 public class OnCollisionWithPlayerUpdateNameProcedure extends MiningmanniesModElements.ModElement {
 	public OnCollisionWithPlayerUpdateNameProcedure(MiningmanniesModElements instance) {
-		super(instance, 71);
+		super(instance, 74);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

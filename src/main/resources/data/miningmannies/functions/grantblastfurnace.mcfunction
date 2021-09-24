@@ -1,0 +1,1 @@
+recipe give @p minecraft:blast_furnace

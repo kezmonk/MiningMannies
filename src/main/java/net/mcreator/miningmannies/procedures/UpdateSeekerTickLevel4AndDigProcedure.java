@@ -12,7 +12,7 @@ import java.util.HashMap;
 @MiningmanniesModElements.ModElement.Tag
 public class UpdateSeekerTickLevel4AndDigProcedure extends MiningmanniesModElements.ModElement {
 	public UpdateSeekerTickLevel4AndDigProcedure(MiningmanniesModElements instance) {
-		super(instance, 165);
+		super(instance, 166);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -56,11 +56,6 @@ public class UpdateSeekerTickLevel4AndDigProcedure extends MiningmanniesModEleme
 			if ((((entity.getPersistentData().getDouble("timer")) % 20) == 0)) {
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();
-					$_dependencies.put("entity", entity);
-					$_dependencies.put("x", x);
-					$_dependencies.put("y", y);
-					$_dependencies.put("z", z);
-					$_dependencies.put("world", world);
 					Seeker4UpdateTickBelowAndDigProcedure.executeProcedure($_dependencies);
 				}
 			}

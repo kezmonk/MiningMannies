@@ -37,7 +37,7 @@ public class ClimbingAxeItem extends MiningmanniesModElements.ModElement {
 	@ObjectHolder("miningmannies:climbing_axe")
 	public static final Item block = null;
 	public ClimbingAxeItem(MiningmanniesModElements instance) {
-		super(instance, 149);
+		super(instance, 32);
 	}
 
 	@Override
@@ -47,6 +47,7 @@ public class ClimbingAxeItem extends MiningmanniesModElements.ModElement {
 			public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 				super.addInformation(itemstack, world, list, flag);
 				list.add(new StringTextComponent("You need two to climb"));
+				list.add(new StringTextComponent("one to break your fall"));
 			}
 
 			@Override

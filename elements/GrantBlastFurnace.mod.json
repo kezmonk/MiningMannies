@@ -1,0 +1,9 @@
+{
+  "_fv": 10,
+  "_type": "function",
+  "definition": {
+    "code": "recipe give @p minecraft:blast_furnace",
+    "name": "grantblastfurnace",
+    "namespace": "mod"
+  }
+}

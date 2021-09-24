@@ -1,0 +1,141 @@
+{
+  "_fv": 10,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 351,
+    "height": 332,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Look For:",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Look For:",
+          "x": 276,
+          "y": 103
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "coal",
+          "width": 193,
+          "height": 40,
+          "name": "text_seek_item",
+          "x": 390,
+          "y": 94
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "coal",
+          "color": {
+            "value": -16777012,
+            "falpha": 0.0
+          },
+          "name": "coal",
+          "x": 278,
+          "y": 152
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "gold",
+          "color": {
+            "value": -16777063,
+            "falpha": 0.0
+          },
+          "name": "gold",
+          "x": 278,
+          "y": 224
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "iron",
+          "color": {
+            "value": -16777012,
+            "falpha": 0.0
+          },
+          "name": "iron",
+          "x": 278,
+          "y": 184
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "redstone",
+          "color": {
+            "value": -16777063,
+            "falpha": 0.0
+          },
+          "name": "redstone",
+          "x": 376,
+          "y": 152
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "emerald",
+          "color": {
+            "value": -16777012,
+            "falpha": 0.0
+          },
+          "name": "emerald",
+          "x": 502,
+          "y": 152
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "diamond",
+          "color": {
+            "value": -16777063,
+            "falpha": 0.0
+          },
+          "name": "diamond",
+          "x": 502,
+          "y": 192
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "lapis",
+          "color": {
+            "value": -16777012,
+            "falpha": 0.0
+          },
+          "name": "lapis",
+          "x": 390,
+          "y": 192
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "nether",
+          "color": {
+            "value": -16777063,
+            "falpha": 0.0
+          },
+          "name": "nether",
+          "x": 390,
+          "y": 232
+        }
+      }
+    ]
+  }
+}

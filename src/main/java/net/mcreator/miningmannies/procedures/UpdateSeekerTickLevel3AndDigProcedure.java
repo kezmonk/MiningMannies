@@ -1,31 +1,17 @@
 package net.mcreator.miningmannies.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.items.CapabilityItemHandler;
-
-import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.nbt.CompoundNBT;
-import net.minecraft.item.ItemStack;
-import net.minecraft.entity.SpawnReason;
-import net.minecraft.entity.MobEntity;
-import net.minecraft.entity.ILivingEntityData;
 import net.minecraft.entity.Entity;
 
-import net.mcreator.miningmannies.entity.OreSeekerLevel2Entity;
-import net.mcreator.miningmannies.entity.OreSeekerLevel1Entity;
-import net.mcreator.miningmannies.MiningmanniesModVariables;
 import net.mcreator.miningmannies.MiningmanniesModElements;
 
-import java.util.concurrent.atomic.AtomicReference;
 import java.util.Map;
 import java.util.HashMap;
 
 @MiningmanniesModElements.ModElement.Tag
 public class UpdateSeekerTickLevel3AndDigProcedure extends MiningmanniesModElements.ModElement {
 	public UpdateSeekerTickLevel3AndDigProcedure(MiningmanniesModElements instance) {
-		super(instance, 164);
+		super(instance, 165);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -54,34 +40,9 @@ public class UpdateSeekerTickLevel3AndDigProcedure extends MiningmanniesModEleme
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if ((entity instanceof OreSeekerLevel1Entity.CustomEntity)) {
+		if ((entity instanceof OreSeekerLevel3Entity.CustomEntity)) {
 			entity.getPersistentData().putDouble("timer",
 					((entity.getPersistentData().getDouble("timer")) + (1 * (entity.getPersistentData().getDouble("timerSpeed")))));
-			if (((entity.getPersistentData().getDouble("timer")) > 12000)) {
-				MiningmanniesModVariables.MiningBlockItemNameSlot0 = (String) (ForgeRegistries.ITEMS.getKey((new Object() {
-					public ItemStack getItemStack(int sltid, Entity entity) {
-						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-						entity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
-							_retval.set(capability.getStackInSlot(sltid).copy());
-						});
-						return _retval.get();
-					}
-				}.getItemStack((int) (0), entity)).getItem()).toString());
-				MiningmanniesModVariables.MiningBlockOwner = (String) (entity.getPersistentData().getString("ownerName"));
-				MiningmanniesModVariables.MiningBlockTimerSpeed = (double) (entity.getPersistentData().getDouble("timerSpeed"));
-				MiningmanniesModVariables.ManniBlockDigChance = (double) (entity.getPersistentData().getDouble("digDownChance"));
-				if (!entity.world.isRemote)
-					entity.remove();
-				if (world instanceof World && !world.getWorld().isRemote) {
-					Entity entityToSpawn = new OreSeekerLevel2Entity.CustomEntity(OreSeekerLevel2Entity.entity, world.getWorld());
-					entityToSpawn.setLocationAndAngles(x, y, z, (float) (entity.rotationYaw), (float) (entity.rotationPitch));
-					if (entityToSpawn instanceof MobEntity)
-						((MobEntity) entityToSpawn).onInitialSpawn(world, world.getDifficultyForLocation(new BlockPos(entityToSpawn)),
-								SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
-					world.addEntity(entityToSpawn);
-				}
-				return;
-			}
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
@@ -91,7 +52,7 @@ public class UpdateSeekerTickLevel3AndDigProcedure extends MiningmanniesModEleme
 				$_dependencies.put("world", world);
 				UpdateSeekerTickDropItemsAddedToSlot0Procedure.executeProcedure($_dependencies);
 			}
-			if ((((entity.getPersistentData().getDouble("timer")) % 20) == 0)) {
+			if ((((entity.getPersistentData().getDouble("timer")) % 60) == 0)) {
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();
 					$_dependencies.put("entity", entity);

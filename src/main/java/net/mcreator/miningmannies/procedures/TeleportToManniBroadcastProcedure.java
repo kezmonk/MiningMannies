@@ -17,7 +17,7 @@ import java.util.Collections;
 @MiningmanniesModElements.ModElement.Tag
 public class TeleportToManniBroadcastProcedure extends MiningmanniesModElements.ModElement {
 	public TeleportToManniBroadcastProcedure(MiningmanniesModElements instance) {
-		super(instance, 55);
+		super(instance, 58);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -6,7 +6,6 @@ import net.minecraftforge.common.ToolType;
 
 import net.minecraft.world.storage.loot.LootContext;
 import net.minecraft.world.IWorldReader;
-import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
@@ -14,6 +13,7 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.block.material.PushReaction;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
@@ -27,7 +27,7 @@ public class SteelBlockBlock extends MiningmanniesModElements.ModElement {
 	@ObjectHolder("miningmannies:steel_block")
 	public static final Block block = null;
 	public SteelBlockBlock(MiningmanniesModElements instance) {
-		super(instance, 29);
+		super(instance, 30);
 	}
 
 	@Override
@@ -58,7 +58,7 @@ public class SteelBlockBlock extends MiningmanniesModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(Items.IRON_INGOT, (int) (1)));
+			return Collections.singletonList(new ItemStack(Blocks.IRON_BLOCK, (int) (1)));
 		}
 	}
 }

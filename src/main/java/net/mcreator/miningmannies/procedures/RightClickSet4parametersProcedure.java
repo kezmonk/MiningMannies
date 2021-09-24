@@ -17,7 +17,7 @@ import java.util.Map;
 @MiningmanniesModElements.ModElement.Tag
 public class RightClickSet4parametersProcedure extends MiningmanniesModElements.ModElement {
 	public RightClickSet4parametersProcedure(MiningmanniesModElements instance) {
-		super(instance, 66);
+		super(instance, 69);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -41,7 +41,7 @@ public class RightClickSet4parametersProcedure extends MiningmanniesModElements.
 				if (sourceentity instanceof PlayerEntity && !sourceentity.world.isRemote) {
 					((PlayerEntity) sourceentity)
 							.sendStatusMessage(
-									new StringTextComponent((("Manni dig downwards at ") + ""
+									new StringTextComponent((("Manni digs down  ") + ""
 											+ (((entity.getPersistentData().getDouble("digDownChance")) * 100)) + "" + (" % of the time."))),
 									(false));
 				}
@@ -103,7 +103,7 @@ public class RightClickSet4parametersProcedure extends MiningmanniesModElements.
 				if (sourceentity instanceof PlayerEntity && !sourceentity.world.isRemote) {
 					((PlayerEntity) sourceentity)
 							.sendStatusMessage(
-									new StringTextComponent((("Manni dig downwards at ") + ""
+									new StringTextComponent((("Manni digs down ") + ""
 											+ (((entity.getPersistentData().getDouble("digDownChance")) * 100)) + "" + (" % of the time."))),
 									(false));
 				}
@@ -113,7 +113,7 @@ public class RightClickSet4parametersProcedure extends MiningmanniesModElements.
 				entity.getPersistentData().putDouble("timerSpeed", ((entity.getPersistentData().getDouble("timerSpeed")) + 0.05));
 				if (sourceentity instanceof PlayerEntity && !sourceentity.world.isRemote) {
 					((PlayerEntity) sourceentity).sendStatusMessage(
-							new StringTextComponent((("timer speed inceased to  ") + "" + ((entity.getPersistentData().getDouble("timerSpeed"))))),
+							new StringTextComponent((("timer speed inceased by ") + "" + ((entity.getPersistentData().getDouble("timerSpeed"))))),
 							(false));
 				}
 				if (sourceentity instanceof PlayerEntity)
@@ -124,7 +124,7 @@ public class RightClickSet4parametersProcedure extends MiningmanniesModElements.
 				entity.getPersistentData().putDouble("timerSpeed", ((entity.getPersistentData().getDouble("timerSpeed")) + 0.2));
 				if (sourceentity instanceof PlayerEntity && !sourceentity.world.isRemote) {
 					((PlayerEntity) sourceentity).sendStatusMessage(
-							new StringTextComponent((("timer speed inceased to ") + "" + ((entity.getPersistentData().getDouble("timerSpeed"))))),
+							new StringTextComponent((("timer speed inceased by ") + "" + ((entity.getPersistentData().getDouble("timerSpeed"))))),
 							(false));
 				}
 				if (sourceentity instanceof PlayerEntity)

@@ -16,7 +16,7 @@ import java.util.Map;
 @MiningmanniesModElements.ModElement.Tag
 public class TeleportSetManniDestinationProcedure extends MiningmanniesModElements.ModElement {
 	public TeleportSetManniDestinationProcedure(MiningmanniesModElements instance) {
-		super(instance, 53);
+		super(instance, 56);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

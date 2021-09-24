@@ -31,7 +31,7 @@
     }
   },
   "rewards": {
-    "experience": 1
+    "experience": 2
   },
   "parent": "miningmannies:toggle_dig_direction_adv"
 }

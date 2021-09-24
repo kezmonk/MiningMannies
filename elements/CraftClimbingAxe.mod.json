@@ -16,25 +16,25 @@
         "value": "CUSTOM:SteelIngot"
       },
       {
-        "value": "Blocks.TRIPWIRE_HOOK"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.DYE#4"
-      },
-      {
-        "value": ""
-      },
-      {
-        "value": "Items.DYE#4"
+        "value": "Items.IRON_NUGGET"
       },
       {
         "value": ""
       },
       {
         "value": ""
+      },
+      {
+        "value": "Items.STICK"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.IRON_NUGGET"
+      },
+      {
+        "value": "Items.STICK"
       }
     ],
     "recipeReturnStack": {

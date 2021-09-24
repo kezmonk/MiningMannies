@@ -2,22 +2,22 @@
   "group": "teleport",
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "0 ",
+    " 1",
     "23",
-    "4 "
+    " 5"
   ],
   "key": {
-    "0": {
-      "item": "minecraft:iron_ingot"
+    "1": {
+      "item": "minecraft:lapis_lazuli"
     },
     "2": {
-      "item": "minecraft:redstone"
+      "item": "minecraft:stone_button"
     },
     "3": {
-      "item": "minecraft:tripwire_hook"
+      "item": "minecraft:redstone"
     },
-    "4": {
-      "item": "minecraft:stone_button"
+    "5": {
+      "item": "minecraft:iron_ingot"
     }
   },
   "result": {

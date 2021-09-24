@@ -3,7 +3,7 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Make Own Iron Ore",
-    "achievementDescription": "Make a iron ore to program a manni",
+    "achievementDescription": "Iron ore makes them evolve faster!",
     "achievementIcon": {
       "value": "Blocks.IRON_ORE"
     },
@@ -17,7 +17,7 @@
       "MakeIronOre",
       "BlastSteel"
     ],
-    "rewardFunction": "No function",
+    "rewardFunction": "GrantBlastFurnace",
     "rewardXP": 1,
     "achievementType": "task",
     "parent": {

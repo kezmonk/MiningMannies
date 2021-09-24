@@ -19,7 +19,7 @@ import java.util.Map;
 @MiningmanniesModElements.ModElement.Tag
 public class TeleportToggleTeleportChanceProcedure extends MiningmanniesModElements.ModElement {
 	public TeleportToggleTeleportChanceProcedure(MiningmanniesModElements instance) {
-		super(instance, 54);
+		super(instance, 57);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

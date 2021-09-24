@@ -18,7 +18,8 @@
       "MakeGrassBlock",
       "MakeDirtFfromGrassBlock",
       "MakeDryGrassBlock",
-      "MakeCobblestoneFromStone"
+      "MakeCobblestoneFromStone",
+      "CraftOreDetector"
     ],
     "rewardFunction": "No function",
     "rewardXP": 5,

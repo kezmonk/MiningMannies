@@ -25,7 +25,7 @@ import java.util.HashMap;
 @MiningmanniesModElements.ModElement.Tag
 public class UpdateSeekerTickLevel1AndDigProcedure extends MiningmanniesModElements.ModElement {
 	public UpdateSeekerTickLevel1AndDigProcedure(MiningmanniesModElements instance) {
-		super(instance, 158);
+		super(instance, 160);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -55,9 +55,8 @@ public class UpdateSeekerTickLevel1AndDigProcedure extends MiningmanniesModEleme
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		if ((entity instanceof OreSeekerLevel1Entity.CustomEntity)) {
-			entity.getPersistentData().putDouble("timer",
-					((entity.getPersistentData().getDouble("timer")) + (1 * (entity.getPersistentData().getDouble("timerSpeed")))));
-			if (((entity.getPersistentData().getDouble("timer")) > 12000)) {
+			entity.getPersistentData().putDouble("timer", ((entity.getPersistentData().getDouble("timer")) + 1));
+			if (((entity.getPersistentData().getDouble("timer")) > (12000 / (entity.getPersistentData().getDouble("timerSpeed"))))) {
 				MiningmanniesModVariables.MiningBlockItemNameSlot0 = (String) (ForgeRegistries.ITEMS.getKey((new Object() {
 					public ItemStack getItemStack(int sltid, Entity entity) {
 						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
@@ -91,7 +90,7 @@ public class UpdateSeekerTickLevel1AndDigProcedure extends MiningmanniesModEleme
 				$_dependencies.put("world", world);
 				UpdateSeekerTickDropItemsAddedToSlot0Procedure.executeProcedure($_dependencies);
 			}
-			if ((((entity.getPersistentData().getDouble("timer")) % 20) == 0)) {
+			if ((((entity.getPersistentData().getDouble("timer")) % 60) == 0)) {
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();
 					$_dependencies.put("entity", entity);

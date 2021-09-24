@@ -41,10 +41,8 @@ import net.minecraft.inventory.container.Container;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
-import net.minecraft.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
 import net.minecraft.entity.ai.goal.HurtByTargetGoal;
 import net.minecraft.entity.SpawnReason;
@@ -53,6 +51,7 @@ import net.minecraft.entity.ILivingEntityData;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.CreatureEntity;
 import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.client.renderer.model.ModelRenderer;
@@ -88,8 +87,8 @@ public class OreSeekerLevel2Entity extends MiningmanniesModElements.ModElement {
 
 	@Override
 	public void initElements() {
-		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER).setShouldReceiveVelocityUpdates(true)
-				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire().size(0.6f, 1.8f))
+		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.CREATURE).setShouldReceiveVelocityUpdates(true)
+				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire().size(0.6f, 0.6f))
 						.build("ore_seeker_level_2").setRegistryName("ore_seeker_level_2");
 		elements.entities.add(() -> entity);
 		elements.items.add(() -> new SpawnEggItem(entity, -52, -16777012, new Item.Properties().group(MiningManniesItemGroup.tab))
@@ -108,7 +107,7 @@ public class OreSeekerLevel2Entity extends MiningmanniesModElements.ModElement {
 			};
 		});
 	}
-	public static class CustomEntity extends MonsterEntity {
+	public static class CustomEntity extends CreatureEntity {
 		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
 			this(entity, world);
 		}
@@ -132,7 +131,6 @@ public class OreSeekerLevel2Entity extends MiningmanniesModElements.ModElement {
 			this.targetSelector.addGoal(2, new HurtByTargetGoal(this));
 			this.goalSelector.addGoal(3, new LookRandomlyGoal(this));
 			this.goalSelector.addGoal(4, new SwimGoal(this));
-			this.goalSelector.addGoal(5, new MeleeAttackGoal(this, 1.2, false));
 		}
 
 		@Override

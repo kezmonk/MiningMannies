@@ -1,0 +1,27 @@
+{
+  "_fv": 10,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Mining Manni Master",
+    "achievementDescription": "You became a Mining Manni Master!",
+    "achievementIcon": {
+      "value": "CUSTOM:Trophy"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": true,
+    "rewardLoot": [
+      "MiningMasterLoot"
+    ],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 200,
+    "achievementType": "goal",
+    "parent": {
+      "value": "CUSTOM:Level4Mannies"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"38\" y=\"36\"><next><block type=\"advancement_trigger\" deletable=\"false\"/></next></block></xml>"
+  }
+}

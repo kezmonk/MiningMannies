@@ -30,13 +30,13 @@
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "onRightClickedOnBlock": {
-      "name": "OreDetectorRightClickedInAir"
+      "name": "OreDetectorightClickAirscanALL"
     },
     "onCrafted": {
       "name": "OreDetectorItemIsCraftedsmelted"
     },
     "onEntitySwing": {
-      "name": "OreDetectorEntitySwingsItem"
+      "name": "OreDetectorEntitySwingItemscanALL"
     }
   }
 }

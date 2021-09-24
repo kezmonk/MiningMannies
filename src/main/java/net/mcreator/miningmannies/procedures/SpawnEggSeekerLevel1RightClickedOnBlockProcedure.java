@@ -20,7 +20,7 @@ import java.util.Map;
 @MiningmanniesModElements.ModElement.Tag
 public class SpawnEggSeekerLevel1RightClickedOnBlockProcedure extends MiningmanniesModElements.ModElement {
 	public SpawnEggSeekerLevel1RightClickedOnBlockProcedure(MiningmanniesModElements instance) {
-		super(instance, 138);
+		super(instance, 141);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

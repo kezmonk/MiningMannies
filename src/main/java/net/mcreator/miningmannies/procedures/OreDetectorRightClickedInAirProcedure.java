@@ -15,7 +15,7 @@ import java.util.Map;
 @MiningmanniesModElements.ModElement.Tag
 public class OreDetectorRightClickedInAirProcedure extends MiningmanniesModElements.ModElement {
 	public OreDetectorRightClickedInAirProcedure(MiningmanniesModElements instance) {
-		super(instance, 91);
+		super(instance, 94);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
