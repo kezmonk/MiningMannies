@@ -114,6 +114,15 @@ public class UpdateTickLevel32Procedure extends MiningmanniesModElements.ModElem
 				MiningmanniesModVariables.MiningBlockOwner = (String) (entity.getPersistentData().getString("ownerName"));
 				MiningmanniesModVariables.MiningBlockTimerSpeed = (double) (entity.getPersistentData().getDouble("timerSpeed"));
 				MiningmanniesModVariables.ManniBlockDigChance = (double) (entity.getPersistentData().getDouble("digDownChance"));
+				{
+					Map<String, Object> $_dependencies = new HashMap<>();
+					$_dependencies.put("entity", entity);
+					$_dependencies.put("x", x);
+					$_dependencies.put("y", y);
+					$_dependencies.put("z", z);
+					$_dependencies.put("world", world);
+					GiveXPmanniEvolutionProcedure.executeProcedure($_dependencies);
+				}
 				if (!entity.world.isRemote)
 					entity.remove();
 				if (world instanceof World && !world.getWorld().isRemote) {

@@ -21,6 +21,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.command.ICommandSource;
 import net.minecraft.command.CommandSource;
 
+import net.mcreator.miningmannies.item.SpawnEggSeekerLevel3Item;
 import net.mcreator.miningmannies.entity.MiningManniSlot40Entity;
 import net.mcreator.miningmannies.entity.MiningManniSlot35Entity;
 import net.mcreator.miningmannies.MiningmanniesModVariables;
@@ -141,6 +142,15 @@ public class UpdateTickLevel35Procedure extends MiningmanniesModElements.ModElem
 									new StringTextComponent(""), world.getWorld().getServer(), null).withFeedbackDisabled(),
 							(("/advancement grant ") + "" + ((entity.getPersistentData().getString("ownerName"))) + ""
 									+ (" only miningmannies:level_4_mannies")));
+				}
+				{
+					Map<String, Object> $_dependencies = new HashMap<>();
+					$_dependencies.put("entity", entity);
+					$_dependencies.put("x", x);
+					$_dependencies.put("y", y);
+					$_dependencies.put("z", z);
+					$_dependencies.put("world", world);
+					GiveXPmanniEvolutionProcedure.executeProcedure($_dependencies);
 				}
 				if (!entity.world.isRemote)
 					entity.remove();

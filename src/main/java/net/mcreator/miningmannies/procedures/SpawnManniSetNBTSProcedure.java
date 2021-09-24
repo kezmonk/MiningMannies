@@ -11,6 +11,7 @@ import net.minecraft.server.MinecraftServer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.Entity;
 
+import net.mcreator.miningmannies.entity.OreSeekerLevel3Entity;
 import net.mcreator.miningmannies.entity.OreSeekerLevel2Entity;
 import net.mcreator.miningmannies.entity.OreSeekerLevel1Entity;
 import net.mcreator.miningmannies.entity.MiningManniSlot45Entity;

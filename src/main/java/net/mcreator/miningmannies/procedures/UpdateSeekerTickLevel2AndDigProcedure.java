@@ -13,6 +13,7 @@ import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.ILivingEntityData;
 import net.minecraft.entity.Entity;
 
+import net.mcreator.miningmannies.entity.OreSeekerLevel3Entity;
 import net.mcreator.miningmannies.entity.OreSeekerLevel2Entity;
 import net.mcreator.miningmannies.MiningmanniesModVariables;
 import net.mcreator.miningmannies.MiningmanniesModElements;
@@ -56,6 +57,33 @@ public class UpdateSeekerTickLevel2AndDigProcedure extends MiningmanniesModEleme
 		if ((entity instanceof OreSeekerLevel2Entity.CustomEntity)) {
 			entity.getPersistentData().putDouble("timer", ((entity.getPersistentData().getDouble("timer")) + 1));
 			if (((entity.getPersistentData().getDouble("timer")) > (12000 / (entity.getPersistentData().getDouble("timerSpeed"))))) {
+				{
+					Map<String, Object> $_dependencies = new HashMap<>();
+					$_dependencies.put("entity", entity);
+					$_dependencies.put("x", x);
+					$_dependencies.put("y", y);
+					$_dependencies.put("z", z);
+					$_dependencies.put("world", world);
+					GiveXPmanniEvolutionProcedure.executeProcedure($_dependencies);
+				}
+				{
+					Map<String, Object> $_dependencies = new HashMap<>();
+					$_dependencies.put("entity", entity);
+					$_dependencies.put("x", x);
+					$_dependencies.put("y", y);
+					$_dependencies.put("z", z);
+					$_dependencies.put("world", world);
+					GiveXPmanniEvolutionProcedure.executeProcedure($_dependencies);
+				}
+				{
+					Map<String, Object> $_dependencies = new HashMap<>();
+					$_dependencies.put("entity", entity);
+					$_dependencies.put("x", x);
+					$_dependencies.put("y", y);
+					$_dependencies.put("z", z);
+					$_dependencies.put("world", world);
+					GiveXPmanniEvolutionProcedure.executeProcedure($_dependencies);
+				}
 				MiningmanniesModVariables.MiningBlockItemNameSlot0 = (String) (ForgeRegistries.ITEMS.getKey((new Object() {
 					public ItemStack getItemStack(int sltid, Entity entity) {
 						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);

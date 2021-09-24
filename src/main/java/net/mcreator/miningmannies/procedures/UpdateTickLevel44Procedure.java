@@ -145,6 +145,15 @@ public class UpdateTickLevel44Procedure extends MiningmanniesModElements.ModElem
 							(("/advancement grant ") + "" + ((entity.getPersistentData().getString("ownerName"))) + ""
 									+ (" only miningmannies:mining_manni_master")));
 				}
+				{
+					Map<String, Object> $_dependencies = new HashMap<>();
+					$_dependencies.put("entity", entity);
+					$_dependencies.put("x", x);
+					$_dependencies.put("y", y);
+					$_dependencies.put("z", z);
+					$_dependencies.put("world", world);
+					GiveXPmanniEvolutionProcedure.executeProcedure($_dependencies);
+				}
 				if (!entity.world.isRemote)
 					entity.remove();
 				if (world instanceof World && !world.getWorld().isRemote) {

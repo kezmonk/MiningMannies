@@ -18,6 +18,7 @@ import net.minecraft.command.CommandSource;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.Block;
 
+import net.mcreator.miningmannies.entity.OreSeekerLevel3Entity;
 import net.mcreator.miningmannies.MiningmanniesModVariables;
 import net.mcreator.miningmannies.MiningmanniesModElements;
 

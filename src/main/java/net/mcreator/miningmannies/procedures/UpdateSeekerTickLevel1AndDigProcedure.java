@@ -57,6 +57,24 @@ public class UpdateSeekerTickLevel1AndDigProcedure extends MiningmanniesModEleme
 		if ((entity instanceof OreSeekerLevel1Entity.CustomEntity)) {
 			entity.getPersistentData().putDouble("timer", ((entity.getPersistentData().getDouble("timer")) + 1));
 			if (((entity.getPersistentData().getDouble("timer")) > (12000 / (entity.getPersistentData().getDouble("timerSpeed"))))) {
+				{
+					Map<String, Object> $_dependencies = new HashMap<>();
+					$_dependencies.put("entity", entity);
+					$_dependencies.put("x", x);
+					$_dependencies.put("y", y);
+					$_dependencies.put("z", z);
+					$_dependencies.put("world", world);
+					GiveXPmanniEvolutionProcedure.executeProcedure($_dependencies);
+				}
+				{
+					Map<String, Object> $_dependencies = new HashMap<>();
+					$_dependencies.put("entity", entity);
+					$_dependencies.put("x", x);
+					$_dependencies.put("y", y);
+					$_dependencies.put("z", z);
+					$_dependencies.put("world", world);
+					GiveXPmanniEvolutionProcedure.executeProcedure($_dependencies);
+				}
 				MiningmanniesModVariables.MiningBlockItemNameSlot0 = (String) (ForgeRegistries.ITEMS.getKey((new Object() {
 					public ItemStack getItemStack(int sltid, Entity entity) {
 						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);

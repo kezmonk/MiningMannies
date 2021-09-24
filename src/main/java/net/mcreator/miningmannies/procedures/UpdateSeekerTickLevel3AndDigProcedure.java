@@ -3,6 +3,7 @@ package net.mcreator.miningmannies.procedures;
 import net.minecraft.world.IWorld;
 import net.minecraft.entity.Entity;
 
+import net.mcreator.miningmannies.entity.OreSeekerLevel3Entity;
 import net.mcreator.miningmannies.MiningmanniesModElements;
 
 import java.util.Map;

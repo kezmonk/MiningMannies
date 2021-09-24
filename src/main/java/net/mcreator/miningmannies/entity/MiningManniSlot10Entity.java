@@ -187,6 +187,7 @@ public class MiningManniSlot10Entity extends MiningmanniesModElements.ModElement
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
+				$_dependencies.put("world", world);
 				SpawnManniSetNBTSProcedure.executeProcedure($_dependencies);
 			}
 			return retval;

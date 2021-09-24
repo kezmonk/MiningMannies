@@ -13,7 +13,7 @@
     {
       "name": "SteelBlock",
       "type": "block",
-      "sortid": 29,
+      "sortid": 30,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -22,7 +22,7 @@
     {
       "name": "OreDetector",
       "type": "tool",
-      "sortid": 30,
+      "sortid": 31,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -31,7 +31,7 @@
     {
       "name": "MiningMannies",
       "type": "tab",
-      "sortid": 31,
+      "sortid": 34,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -40,20 +40,37 @@
     {
       "name": "ElectricFieldParticleSpawningCondition",
       "type": "procedure",
-      "sortid": 32,
+      "sortid": 35,
       "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "electric_field_particle_spawning_condition",
       "metadata": {
         "return_type": "LOGIC",
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       }
     },
     {
       "name": "ElectricField",
       "type": "block",
-      "sortid": 33,
+      "sortid": 36,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -62,7 +79,7 @@
     {
       "name": "SpawnEggManniLevel1",
       "type": "item",
-      "sortid": 34,
+      "sortid": 37,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -71,7 +88,7 @@
     {
       "name": "CraftOreDetector",
       "type": "recipe",
-      "sortid": 35,
+      "sortid": 38,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -80,7 +97,7 @@
     {
       "name": "BlastSteel",
       "type": "recipe",
-      "sortid": 36,
+      "sortid": 39,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -89,7 +106,7 @@
     {
       "name": "MakeGrassBlock",
       "type": "recipe",
-      "sortid": 37,
+      "sortid": 40,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -98,7 +115,7 @@
     {
       "name": "MakeDirtFfromGrassBlock",
       "type": "recipe",
-      "sortid": 38,
+      "sortid": 41,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -107,7 +124,7 @@
     {
       "name": "MakeDryGrassBlock",
       "type": "recipe",
-      "sortid": 39,
+      "sortid": 42,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -116,7 +133,7 @@
     {
       "name": "MakeIronOre",
       "type": "recipe",
-      "sortid": 40,
+      "sortid": 43,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -125,7 +142,7 @@
     {
       "name": "MakeLapisOre",
       "type": "recipe",
-      "sortid": 41,
+      "sortid": 44,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -134,7 +151,7 @@
     {
       "name": "MakeCoalOre",
       "type": "recipe",
-      "sortid": 42,
+      "sortid": 45,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -143,7 +160,7 @@
     {
       "name": "MakeDiamondOre",
       "type": "recipe",
-      "sortid": 43,
+      "sortid": 46,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -152,7 +169,7 @@
     {
       "name": "MakeEmeraldOre",
       "type": "recipe",
-      "sortid": 44,
+      "sortid": 47,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -161,7 +178,7 @@
     {
       "name": "MakeNetherOre",
       "type": "recipe",
-      "sortid": 45,
+      "sortid": 48,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -170,7 +187,7 @@
     {
       "name": "MakeRedstoneOre",
       "type": "recipe",
-      "sortid": 46,
+      "sortid": 49,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -179,7 +196,7 @@
     {
       "name": "HarvestGUIOneSlot",
       "type": "gui",
-      "sortid": 47,
+      "sortid": 50,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -188,7 +205,7 @@
     {
       "name": "HarvestGUITwoSlots",
       "type": "gui",
-      "sortid": 48,
+      "sortid": 51,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -197,7 +214,7 @@
     {
       "name": "HarvestGUIThreeSlots",
       "type": "gui",
-      "sortid": 49,
+      "sortid": 52,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -206,7 +223,7 @@
     {
       "name": "HarvestGUIFourSlots",
       "type": "gui",
-      "sortid": 50,
+      "sortid": 53,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -215,7 +232,7 @@
     {
       "name": "TeleportGUI",
       "type": "gui",
-      "sortid": 51,
+      "sortid": 54,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -224,7 +241,7 @@
     {
       "name": "TeleportManuallyButtonClick",
       "type": "procedure",
-      "sortid": 52,
+      "sortid": 55,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -249,7 +266,7 @@
     {
       "name": "TeleportSetManniDestination",
       "type": "procedure",
-      "sortid": 53,
+      "sortid": 56,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -282,7 +299,7 @@
     {
       "name": "TeleportToggleTeleportChance",
       "type": "procedure",
-      "sortid": 54,
+      "sortid": 57,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -315,7 +332,7 @@
     {
       "name": "TeleportToManniBroadcast",
       "type": "procedure",
-      "sortid": 55,
+      "sortid": 58,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -336,7 +353,7 @@
     {
       "name": "TeleporterBlockAdded",
       "type": "procedure",
-      "sortid": 56,
+      "sortid": 59,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -365,7 +382,7 @@
     {
       "name": "TeleporterOnBlockRightClicked",
       "type": "procedure",
-      "sortid": 57,
+      "sortid": 60,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -398,7 +415,7 @@
     {
       "name": "AdventureBegins",
       "type": "achievement",
-      "sortid": 58,
+      "sortid": 61,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -407,7 +424,7 @@
     {
       "name": "MakeOwnCoalOre",
       "type": "achievement",
-      "sortid": 59,
+      "sortid": 62,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -416,7 +433,7 @@
     {
       "name": "MakeOwnDiamondOre",
       "type": "achievement",
-      "sortid": 60,
+      "sortid": 63,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -425,7 +442,7 @@
     {
       "name": "MakeOwnNetherOre",
       "type": "achievement",
-      "sortid": 61,
+      "sortid": 64,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -434,7 +451,7 @@
     {
       "name": "MakeOwnEmeraldOre",
       "type": "achievement",
-      "sortid": 62,
+      "sortid": 65,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -443,7 +460,7 @@
     {
       "name": "MakeOwnLapisOre",
       "type": "achievement",
-      "sortid": 63,
+      "sortid": 66,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -452,7 +469,7 @@
     {
       "name": "MakeOwnIronOre",
       "type": "achievement",
-      "sortid": 64,
+      "sortid": 67,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -461,7 +478,7 @@
     {
       "name": "MakeOwnRedstoneOre",
       "type": "achievement",
-      "sortid": 65,
+      "sortid": 68,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -470,7 +487,7 @@
     {
       "name": "MiningManniSlot10",
       "type": "mob",
-      "sortid": 5,
+      "sortid": 6,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -479,7 +496,7 @@
     {
       "name": "RightClickSet4parameters",
       "type": "procedure",
-      "sortid": 66,
+      "sortid": 69,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -500,7 +517,7 @@
     {
       "name": "MiningManniSlot11",
       "type": "mob",
-      "sortid": 6,
+      "sortid": 7,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -509,7 +526,7 @@
     {
       "name": "SpawnManniSetNBTS",
       "type": "procedure",
-      "sortid": 67,
+      "sortid": 70,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -526,7 +543,7 @@
     {
       "name": "UpdateTickDropItemsAddedToSlot0",
       "type": "procedure",
-      "sortid": 68,
+      "sortid": 71,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -559,7 +576,7 @@
     {
       "name": "UpdateTickDigBelowSlot0",
       "type": "procedure",
-      "sortid": 69,
+      "sortid": 72,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -592,7 +609,7 @@
     {
       "name": "UpdateTickDigFrontSlot0",
       "type": "procedure",
-      "sortid": 70,
+      "sortid": 73,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -625,7 +642,7 @@
     {
       "name": "MiningManniSlot12",
       "type": "mob",
-      "sortid": 7,
+      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -634,7 +651,7 @@
     {
       "name": "OnCollisionWithPlayerUpdateName",
       "type": "procedure",
-      "sortid": 71,
+      "sortid": 74,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -651,7 +668,7 @@
     {
       "name": "TeleporterSpawnInByBlocks",
       "type": "procedure",
-      "sortid": 72,
+      "sortid": 75,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -684,7 +701,7 @@
     {
       "name": "UpdateTickDropItemsAddedToSlot2",
       "type": "procedure",
-      "sortid": 73,
+      "sortid": 76,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -717,7 +734,7 @@
     {
       "name": "UpdateTickDropItemsAddedToSlot4",
       "type": "procedure",
-      "sortid": 74,
+      "sortid": 77,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -750,7 +767,7 @@
     {
       "name": "UpdateTickDropItemsAddedToSlot6",
       "type": "procedure",
-      "sortid": 75,
+      "sortid": 78,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -783,7 +800,7 @@
     {
       "name": "UpdateTickDigBelowSlot2",
       "type": "procedure",
-      "sortid": 76,
+      "sortid": 79,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -816,7 +833,7 @@
     {
       "name": "UpdateTickDigBelowSlot4",
       "type": "procedure",
-      "sortid": 77,
+      "sortid": 80,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -849,7 +866,7 @@
     {
       "name": "UpdateTickDigBelowSlot6",
       "type": "procedure",
-      "sortid": 78,
+      "sortid": 81,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -882,7 +899,7 @@
     {
       "name": "UpdateTickDigFrontSlot2",
       "type": "procedure",
-      "sortid": 79,
+      "sortid": 82,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -915,7 +932,7 @@
     {
       "name": "UpdateTickDigFrontSlot4",
       "type": "procedure",
-      "sortid": 80,
+      "sortid": 83,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -948,7 +965,7 @@
     {
       "name": "UpdateTickDigFrontSlot6",
       "type": "procedure",
-      "sortid": 81,
+      "sortid": 84,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -981,7 +998,7 @@
     {
       "name": "UpdateTickLevel10",
       "type": "procedure",
-      "sortid": 82,
+      "sortid": 85,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1014,7 +1031,7 @@
     {
       "name": "UpdateTickLevel11",
       "type": "procedure",
-      "sortid": 83,
+      "sortid": 86,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1047,7 +1064,7 @@
     {
       "name": "UpdateTickLevel12",
       "type": "procedure",
-      "sortid": 84,
+      "sortid": 87,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1080,7 +1097,7 @@
     {
       "name": "Level2Mannies",
       "type": "achievement",
-      "sortid": 85,
+      "sortid": 88,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1089,7 +1106,7 @@
     {
       "name": "MiningManniSlot13",
       "type": "mob",
-      "sortid": 8,
+      "sortid": 9,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1098,7 +1115,7 @@
     {
       "name": "MiningManniSlot14",
       "type": "mob",
-      "sortid": 9,
+      "sortid": 10,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1107,7 +1124,7 @@
     {
       "name": "MiningManniSlot15",
       "type": "mob",
-      "sortid": 10,
+      "sortid": 11,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1116,7 +1133,7 @@
     {
       "name": "UpdateTickLevel13",
       "type": "procedure",
-      "sortid": 86,
+      "sortid": 89,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1149,7 +1166,7 @@
     {
       "name": "UpdateTickLevel14",
       "type": "procedure",
-      "sortid": 87,
+      "sortid": 90,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1182,7 +1199,7 @@
     {
       "name": "UpdateTickLevel15final",
       "type": "procedure",
-      "sortid": 88,
+      "sortid": 91,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1215,7 +1232,7 @@
     {
       "name": "OreDetectorEntitySwingsItem",
       "type": "procedure",
-      "sortid": 89,
+      "sortid": 92,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1236,7 +1253,7 @@
     {
       "name": "OreDetectorItemIsCraftedsmelted",
       "type": "procedure",
-      "sortid": 90,
+      "sortid": 93,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1253,7 +1270,7 @@
     {
       "name": "OreDetectorRightClickedInAir",
       "type": "procedure",
-      "sortid": 91,
+      "sortid": 94,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1290,13 +1307,17 @@
     {
       "name": "TeleporterBlockDestroyedByPlayer",
       "type": "procedure",
-      "sortid": 92,
+      "sortid": 95,
       "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "teleporter_block_destroyed_by_player",
       "metadata": {
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "x",
             "type": "number"
@@ -1319,7 +1340,7 @@
     {
       "name": "SpawnEggManniLevel2",
       "type": "item",
-      "sortid": 93,
+      "sortid": 96,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1328,7 +1349,7 @@
     {
       "name": "MakeMetalDetectorAdv",
       "type": "achievement",
-      "sortid": 94,
+      "sortid": 97,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1337,7 +1358,7 @@
     {
       "name": "ToggleDigDirectionAdv",
       "type": "achievement",
-      "sortid": 95,
+      "sortid": 98,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1346,7 +1367,7 @@
     {
       "name": "ManniJumpBoostAdv",
       "type": "achievement",
-      "sortid": 96,
+      "sortid": 99,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1355,7 +1376,7 @@
     {
       "name": "GlowingEffectAdv",
       "type": "achievement",
-      "sortid": 97,
+      "sortid": 100,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1364,7 +1385,7 @@
     {
       "name": "HealMannisAdv",
       "type": "achievement",
-      "sortid": 98,
+      "sortid": 101,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1373,7 +1394,7 @@
     {
       "name": "Level3Mannies",
       "type": "achievement",
-      "sortid": 99,
+      "sortid": 102,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1382,7 +1403,7 @@
     {
       "name": "Level4Mannies",
       "type": "achievement",
-      "sortid": 100,
+      "sortid": 103,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1391,7 +1412,7 @@
     {
       "name": "UpdateTickLevel40",
       "type": "procedure",
-      "sortid": 101,
+      "sortid": 104,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1424,7 +1445,7 @@
     {
       "name": "UpdateTickLevel20",
       "type": "procedure",
-      "sortid": 102,
+      "sortid": 105,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1457,7 +1478,7 @@
     {
       "name": "UpdateTickLevel30",
       "type": "procedure",
-      "sortid": 103,
+      "sortid": 106,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1488,207 +1509,9 @@
       }
     },
     {
-      "name": "Seeker1UpdateTickBlockBelow",
-      "type": "procedure",
-      "sortid": 104,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "seeker_1_update_tick_block_below",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Seeker1UpdateTickBlockFront",
-      "type": "procedure",
-      "sortid": 105,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "seeker_1_update_tick_block_front",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Seeker2UpdateTickBlockBelow",
-      "type": "procedure",
-      "sortid": 106,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "seeker_2_update_tick_block_below",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Seeker2UpdateTickBlockFront",
-      "type": "procedure",
-      "sortid": 107,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "seeker_2_update_tick_block_front",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "UpdateSeekerTickLevel1",
-      "type": "procedure",
-      "sortid": 108,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "update_seeker_tick_level_1",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "UpdateSeekerTickLevel2",
-      "type": "procedure",
-      "sortid": 109,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "update_seeker_tick_level_2",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "SeekerGUI",
       "type": "gui",
-      "sortid": 110,
+      "sortid": 113,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1706,7 +1529,7 @@
     {
       "name": "ManniFireResistanceAdv",
       "type": "achievement",
-      "sortid": 111,
+      "sortid": 114,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1715,7 +1538,7 @@
     {
       "name": "CraftManniEggLevel1",
       "type": "recipe",
-      "sortid": 112,
+      "sortid": 115,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1724,7 +1547,7 @@
     {
       "name": "CraftBatteryCells",
       "type": "recipe",
-      "sortid": 113,
+      "sortid": 116,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1733,7 +1556,7 @@
     {
       "name": "EvolveMannisFaster",
       "type": "achievement",
-      "sortid": 114,
+      "sortid": 117,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1742,7 +1565,7 @@
     {
       "name": "EvolveMannisEvenFasterAdv",
       "type": "achievement",
-      "sortid": 115,
+      "sortid": 118,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1751,7 +1574,7 @@
     {
       "name": "MakeCobblestoneFromStone",
       "type": "recipe",
-      "sortid": 116,
+      "sortid": 119,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1760,7 +1583,7 @@
     {
       "name": "SeekersAdv",
       "type": "achievement",
-      "sortid": 117,
+      "sortid": 120,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1787,7 +1610,7 @@
     {
       "name": "UpdateSeekerTickDropItemsAddedToSlot0",
       "type": "procedure",
-      "sortid": 118,
+      "sortid": 121,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1820,7 +1643,7 @@
     {
       "name": "SpawnEggManniLevel3",
       "type": "item",
-      "sortid": 119,
+      "sortid": 122,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1829,7 +1652,7 @@
     {
       "name": "SpawnEggManniLevel4",
       "type": "item",
-      "sortid": 120,
+      "sortid": 123,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1838,7 +1661,7 @@
     {
       "name": "SpawnEggSeekerLevel1",
       "type": "item",
-      "sortid": 121,
+      "sortid": 124,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1847,7 +1670,7 @@
     {
       "name": "SpawnEggSeekerLevel2",
       "type": "item",
-      "sortid": 122,
+      "sortid": 125,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1856,7 +1679,7 @@
     {
       "name": "MiningManniSlot20",
       "type": "mob",
-      "sortid": 11,
+      "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1865,7 +1688,7 @@
     {
       "name": "MiningManniSlot21",
       "type": "mob",
-      "sortid": 12,
+      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1874,7 +1697,7 @@
     {
       "name": "MiningManniSlot22",
       "type": "mob",
-      "sortid": 13,
+      "sortid": 14,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1883,7 +1706,7 @@
     {
       "name": "MiningManniSlot23",
       "type": "mob",
-      "sortid": 14,
+      "sortid": 15,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1892,7 +1715,7 @@
     {
       "name": "MiningManniSlot24",
       "type": "mob",
-      "sortid": 15,
+      "sortid": 16,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1901,7 +1724,7 @@
     {
       "name": "MiningManniSlot25",
       "type": "mob",
-      "sortid": 16,
+      "sortid": 17,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1910,7 +1733,7 @@
     {
       "name": "MiningManniSlot30",
       "type": "mob",
-      "sortid": 17,
+      "sortid": 18,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1919,7 +1742,7 @@
     {
       "name": "MiningManniSlot31",
       "type": "mob",
-      "sortid": 18,
+      "sortid": 19,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1928,7 +1751,7 @@
     {
       "name": "MiningManniSlot32",
       "type": "mob",
-      "sortid": 19,
+      "sortid": 20,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1937,7 +1760,7 @@
     {
       "name": "MiningManniSlot33",
       "type": "mob",
-      "sortid": 20,
+      "sortid": 21,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1946,7 +1769,7 @@
     {
       "name": "MiningManniSlot34",
       "type": "mob",
-      "sortid": 21,
+      "sortid": 22,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1955,7 +1778,7 @@
     {
       "name": "MiningManniSlot35",
       "type": "mob",
-      "sortid": 22,
+      "sortid": 23,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1964,7 +1787,7 @@
     {
       "name": "MiningManniSlot40",
       "type": "mob",
-      "sortid": 23,
+      "sortid": 24,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1973,7 +1796,7 @@
     {
       "name": "MiningManniSlot41",
       "type": "mob",
-      "sortid": 24,
+      "sortid": 25,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1982,7 +1805,7 @@
     {
       "name": "MiningManniSlot42",
       "type": "mob",
-      "sortid": 25,
+      "sortid": 26,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1991,7 +1814,7 @@
     {
       "name": "MiningManniSlot43",
       "type": "mob",
-      "sortid": 26,
+      "sortid": 27,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2000,7 +1823,7 @@
     {
       "name": "MiningManniSlot44",
       "type": "mob",
-      "sortid": 27,
+      "sortid": 28,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2009,7 +1832,7 @@
     {
       "name": "MiningManniSlot45",
       "type": "mob",
-      "sortid": 28,
+      "sortid": 29,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2018,7 +1841,7 @@
     {
       "name": "UpdateTickLevel21",
       "type": "procedure",
-      "sortid": 123,
+      "sortid": 126,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2051,7 +1874,7 @@
     {
       "name": "UpdateTickLevel22",
       "type": "procedure",
-      "sortid": 124,
+      "sortid": 127,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2084,7 +1907,7 @@
     {
       "name": "UpdateTickLevel23",
       "type": "procedure",
-      "sortid": 125,
+      "sortid": 128,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2117,7 +1940,7 @@
     {
       "name": "UpdateTickLevel24",
       "type": "procedure",
-      "sortid": 126,
+      "sortid": 129,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2150,7 +1973,7 @@
     {
       "name": "UpdateTickLevel25",
       "type": "procedure",
-      "sortid": 127,
+      "sortid": 130,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2183,7 +2006,7 @@
     {
       "name": "UpdateTickLevel31",
       "type": "procedure",
-      "sortid": 128,
+      "sortid": 131,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2216,7 +2039,7 @@
     {
       "name": "UpdateTickLevel32",
       "type": "procedure",
-      "sortid": 129,
+      "sortid": 132,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2249,7 +2072,7 @@
     {
       "name": "UpdateTickLevel33",
       "type": "procedure",
-      "sortid": 130,
+      "sortid": 133,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2282,7 +2105,7 @@
     {
       "name": "UpdateTickLevel34",
       "type": "procedure",
-      "sortid": 131,
+      "sortid": 134,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2315,7 +2138,7 @@
     {
       "name": "UpdateTickLevel35",
       "type": "procedure",
-      "sortid": 132,
+      "sortid": 135,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2348,7 +2171,7 @@
     {
       "name": "UpdateTickLevel41",
       "type": "procedure",
-      "sortid": 133,
+      "sortid": 136,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2381,7 +2204,7 @@
     {
       "name": "UpdateTickLevel42",
       "type": "procedure",
-      "sortid": 134,
+      "sortid": 137,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2414,7 +2237,7 @@
     {
       "name": "UpdateTickLevel43",
       "type": "procedure",
-      "sortid": 135,
+      "sortid": 138,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2447,7 +2270,7 @@
     {
       "name": "UpdateTickLevel44",
       "type": "procedure",
-      "sortid": 136,
+      "sortid": 139,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2480,7 +2303,7 @@
     {
       "name": "UpdateTickLevel45",
       "type": "procedure",
-      "sortid": 137,
+      "sortid": 140,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2513,7 +2336,7 @@
     {
       "name": "SpawnEggSeekerLevel1RightClickedOnBlock",
       "type": "procedure",
-      "sortid": 138,
+      "sortid": 141,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2546,7 +2369,7 @@
     {
       "name": "SpawnEggManniLevel2RightClickedOnBlock",
       "type": "procedure",
-      "sortid": 139,
+      "sortid": 142,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2579,7 +2402,7 @@
     {
       "name": "SpawnEggSeekerLevel2RightClickedOnBlock",
       "type": "procedure",
-      "sortid": 140,
+      "sortid": 143,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2612,7 +2435,7 @@
     {
       "name": "SpawnEggManniLevel1RightClickedOnBlock",
       "type": "procedure",
-      "sortid": 141,
+      "sortid": 144,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2645,7 +2468,7 @@
     {
       "name": "SpawnEggManniLevel3RightClickedOnBlock",
       "type": "procedure",
-      "sortid": 142,
+      "sortid": 145,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2678,7 +2501,7 @@
     {
       "name": "SpawnEggManniLevel4RightClickedOnBlock",
       "type": "procedure",
-      "sortid": 143,
+      "sortid": 146,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2711,7 +2534,7 @@
     {
       "name": "MakeTeleporterChallenge",
       "type": "achievement",
-      "sortid": 144,
+      "sortid": 147,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2720,7 +2543,7 @@
     {
       "name": "CraftManniEggLevel2",
       "type": "recipe",
-      "sortid": 145,
+      "sortid": 148,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2729,7 +2552,7 @@
     {
       "name": "CraftManniEggLevel3",
       "type": "recipe",
-      "sortid": 146,
+      "sortid": 149,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2738,7 +2561,7 @@
     {
       "name": "CraftManniEggLevel4",
       "type": "recipe",
-      "sortid": 147,
+      "sortid": 150,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2747,7 +2570,7 @@
     {
       "name": "SmeltCoalOre",
       "type": "recipe",
-      "sortid": 148,
+      "sortid": 151,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2756,7 +2579,7 @@
     {
       "name": "ClimbingAxe",
       "type": "tool",
-      "sortid": 149,
+      "sortid": 32,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2765,7 +2588,7 @@
     {
       "name": "ClimbingAxeToolInHandTick",
       "type": "procedure",
-      "sortid": 150,
+      "sortid": 152,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2786,7 +2609,7 @@
     {
       "name": "ClimbingAxeRightClickedOnBlock",
       "type": "procedure",
-      "sortid": 150,
+      "sortid": 153,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2815,7 +2638,7 @@
     {
       "name": "SteelIngot",
       "type": "item",
-      "sortid": 151,
+      "sortid": 33,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2824,7 +2647,7 @@
     {
       "name": "CraftSteelBlock",
       "type": "recipe",
-      "sortid": 152,
+      "sortid": 154,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2833,7 +2656,7 @@
     {
       "name": "CraftClimbingAxe",
       "type": "recipe",
-      "sortid": 153,
+      "sortid": 155,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2842,7 +2665,7 @@
     {
       "name": "ClimbWithAnAxe",
       "type": "achievement",
-      "sortid": 154,
+      "sortid": 156,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2851,7 +2674,7 @@
     {
       "name": "MakeSteel",
       "type": "achievement",
-      "sortid": 155,
+      "sortid": 157,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2860,7 +2683,7 @@
     {
       "name": "MakeSteelBlock",
       "type": "achievement",
-      "sortid": 156,
+      "sortid": 158,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2869,7 +2692,7 @@
     {
       "name": "Seeker1UpdateTickBelowAndDig",
       "type": "procedure",
-      "sortid": 157,
+      "sortid": 159,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2902,7 +2725,7 @@
     {
       "name": "UpdateSeekerTickLevel1AndDig",
       "type": "procedure",
-      "sortid": 158,
+      "sortid": 160,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2935,7 +2758,7 @@
     {
       "name": "Seeker2UpdateTickBelowAndDig",
       "type": "procedure",
-      "sortid": 160,
+      "sortid": 161,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2968,7 +2791,7 @@
     {
       "name": "Seeker3UpdateTickBelowAndDig",
       "type": "procedure",
-      "sortid": 161,
+      "sortid": 162,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3001,40 +2824,19 @@
     {
       "name": "Seeker4UpdateTickBelowAndDig",
       "type": "procedure",
-      "sortid": 162,
+      "sortid": 163,
       "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "seeker_4_update_tick_below_and_dig",
       "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       }
     },
     {
       "name": "UpdateSeekerTickLevel2AndDig",
       "type": "procedure",
-      "sortid": 163,
+      "sortid": 164,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3067,7 +2869,7 @@
     {
       "name": "UpdateSeekerTickLevel3AndDig",
       "type": "procedure",
-      "sortid": 164,
+      "sortid": 165,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3100,11 +2902,354 @@
     {
       "name": "UpdateSeekerTickLevel4AndDig",
       "type": "procedure",
-      "sortid": 165,
+      "sortid": 166,
       "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "update_seeker_tick_level_4_and_dig",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OreDetectorightClickAirscanALL",
+      "type": "procedure",
+      "sortid": 167,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ore_detectoright_click_airscan_all",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OreDetectorEntitySwingItemscanALL",
+      "type": "procedure",
+      "sortid": 168,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ore_detector_entity_swing_itemscan_all",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SeekerTextEntriesGUI",
+      "type": "gui",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "seeker_text_entries_gui"
+    },
+    {
+      "name": "OreSeekerLevel3",
+      "type": "mob",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ore_seeker_level_3"
+    },
+    {
+      "name": "Seekertulip",
+      "type": "achievement",
+      "sortid": 170,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "seekertulip"
+    },
+    {
+      "name": "Seekerdandelion",
+      "type": "achievement",
+      "sortid": 171,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "seekerdandelion"
+    },
+    {
+      "name": "SeekerOxeyeDaisy",
+      "type": "achievement",
+      "sortid": 172,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "seeker_oxeye_daisy"
+    },
+    {
+      "name": "SeekerAzureBluet",
+      "type": "achievement",
+      "sortid": 173,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "seeker_azure_bluet"
+    },
+    {
+      "name": "SeekerCornflower",
+      "type": "achievement",
+      "sortid": 174,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "seeker_cornflower"
+    },
+    {
+      "name": "SeekerLilac",
+      "type": "achievement",
+      "sortid": 175,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "seeker_lilac"
+    },
+    {
+      "name": "SeekerRoseBush",
+      "type": "achievement",
+      "sortid": 176,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "seeker_rose_bush"
+    },
+    {
+      "name": "SeekerPeony",
+      "type": "achievement",
+      "sortid": 177,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "seeker_peony"
+    },
+    {
+      "name": "ElectricFieldUpdateTick",
+      "type": "procedure",
+      "sortid": 178,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "electric_field_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ElectricFieldBlockAdded",
+      "type": "procedure",
+      "sortid": 179,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "electric_field_block_added",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GrantBlastFurnace",
+      "type": "function",
+      "sortid": 181,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "grant_blast_furnace"
+    },
+    {
+      "name": "SpawnEggSeekerLevel3",
+      "type": "item",
+      "sortid": 182,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spawn_egg_seeker_level_3"
+    },
+    {
+      "name": "SpawnEggSeekerLevel3RightClickedOnBlock",
+      "type": "procedure",
+      "sortid": 183,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spawn_egg_seeker_level_3_right_clicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MiningManniMaster",
+      "type": "achievement",
+      "sortid": 184,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mining_manni_master"
+    },
+    {
+      "name": "Trophy",
+      "type": "item",
+      "sortid": 185,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "trophy"
+    },
+    {
+      "name": "ManniChatterCommandExecuted",
+      "type": "procedure",
+      "sortid": 187,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "manni_chatter_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ManniChatter",
+      "type": "command",
+      "sortid": 187,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "manni_chatter"
+    },
+    {
+      "name": "MiningMasterLoot",
+      "type": "loottable",
+      "sortid": 188,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mining_master_loot"
+    },
+    {
+      "name": "GiveXPmanniEvolution",
+      "type": "procedure",
+      "sortid": 191,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "give_x_pmanni_evolution",
       "metadata": {
         "dependencies": [
           {
@@ -3257,6 +3402,12 @@
       "type": "number",
       "scope": "global",
       "value": "0"
+    },
+    {
+      "name": "ManniChatter",
+      "type": "logic",
+      "scope": "global",
+      "value": "true"
     }
   ],
   "sound_elements": [],
@@ -3268,31 +3419,34 @@
       "advancements.heal_mannis_adv.title": "Heal Mannis",
       "item.miningmannies.mining_manni_slot_44": "Mining Manni Phase 4.4 Spawn Egg",
       "item.miningmannies.mining_manni_slot_45": "Mining Manni Phase 4.5 Spawn Egg",
-      "item.miningmannies.mining_manni_slot_42": "Mining Manni Phase 4.2 Spawn Egg",
       "advancements.make_metal_detector_adv.title": "Make a Metal Detector",
+      "item.miningmannies.mining_manni_slot_42": "Mining Manni Phase 4.2 Spawn Egg",
       "item.miningmannies.mining_manni_slot_43": "Mining Manni Phase 4.3 Spawn Egg",
       "item.miningmannies.mining_manni_slot_40": "Mining Manni Phase 4.0 Spawn Egg",
       "item.miningmannies.mining_manni_slot_41": "Mining Manni Phase 4.1 Spawn Egg",
       "advancements.evolve_mannis_even_faster_adv.title": "Evolve Mannis Even Faster!",
       "advancements.make_own_lapis_ore.descr": "Make a lapis ore to program a manni",
       "advancements.glowing_effect_adv.title": "Glowing Effect",
+      "advancements.seekerdandelion.title": "Seeker Dandelion",
       "item.miningmannies.mining_manni_slot_35": "Mining Manni Phase 3.5 Spawn Egg",
       "advancements.make_teleporter_challenge.title": "Make a Mining Manni Teleporter",
       "item.miningmannies.battery_cells": "Battery Cells",
       "entity.miningmannies.mining_manni_slot_44": "Mining Manni Phase 4.4",
       "entity.miningmannies.mining_manni_slot_45": "Mining Manni Phase 4.5",
       "entity.miningmannies.mining_manni_slot_42": "Mining Manni Phase 4.2",
-      "entity.miningmannies.mining_manni_slot_43": "Mining Manni Phase 4.3",
       "advancements.make_steel_block.descr": "You made a steel block, they\u0027re super tough.",
+      "entity.miningmannies.mining_manni_slot_43": "Mining Manni Phase 4.3",
       "entity.miningmannies.mining_manni_slot_40": "Mining Manni Phase 4.0",
       "entity.miningmannies.mining_manni_slot_41": "Mining Manni Phase 4.1",
       "advancements.make_steel.descr": "Blast iron to make steel.",
+      "advancements.seeker_cornflower.descr": "Seeker3 [Cornflower\u003dlapis ore]",
       "advancements.make_own_emerald_ore.descr": "Make a emerald ore to program a manni",
       "advancements.adventure_begins.title": "Make Mining Mannies!",
       "advancements.climb_with_an_axe.title": "Climb With An Axe",
       "advancements.evolve_mannis_faster.title": "Evolve Mannis Faster!",
-      "advancements.make_own_iron_ore.descr": "Make a iron ore to program a manni",
+      "advancements.make_own_iron_ore.descr": "Iron ore makes them evolve faster!",
       "block.miningmannies.steel_block": "Steel Block",
+      "advancements.seeker_rose_bush.descr": "Seeker3 [Rose Bush\u003demerald]",
       "advancements.level_3_mannies.title": "Phase 3 Mannies",
       "advancements.make_own_diamond_ore.descr": "Make a diamond ore to program a manni",
       "block.miningmannies.electric_field": "Electric Field",
@@ -3301,24 +3455,30 @@
       "entity.miningmannies.ore_seeker_level_2": "Ore Seeker Level 2",
       "entity.miningmannies.mining_manni_slot_31": "Mining Manni Phase 3.1",
       "entity.miningmannies.mining_manni_slot_32": "Mining Manni Phase 3.2",
+      "entity.miningmannies.ore_seeker_level_3": "Ore Seeker Level 3",
       "entity.miningmannies.mining_manni_slot_30": "Mining Manni Phase 3.0",
       "advancements.toggle_dig_direction_adv.title": "Toggle Dig Direction",
       "advancements.manni_fire_resistance_adv.title": "Manni Fire Resistance",
       "advancements.toggle_dig_direction_adv.descr": "Try in the left hand and click on a Manni",
+      "item.miningmannies.spawn_egg_seeker_level_3": "Spawn Egg Seeker Phase 3",
       "item.miningmannies.spawn_egg_seeker_level_2": "Spawn Egg Seeker Phase 2",
       "item.miningmannies.spawn_egg_seeker_level_1": "Spawn Egg Seeker Phase 1",
       "advancements.make_own_coal_ore.title": "Make Own Coal Ore",
       "advancements.make_own_nether_ore.title": "Make Own Nether Ore",
+      "advancements.seeker_lilac.title": "Seeker Lilac",
       "block.miningmannies.teleporter": "Teleporter",
       "entity.miningmannies.mining_manni_slot_35": "Mining Manni Phase 3.5",
       "advancements.level_4_mannies.descr": "Your mannies can now harvest 4 blocks!",
       "entity.miningmannies.mining_manni_slot_22": "Mining Manni Phase 2.2",
       "entity.miningmannies.mining_manni_slot_23": "Mining Manni Phase 2.3",
       "entity.miningmannies.mining_manni_slot_20": "Mining Manni Phase 2.0",
+      "advancements.seeker_lilac.descr": "Seeker3 [Lilac\u003dnether ore]",
       "entity.miningmannies.mining_manni_slot_21": "Mining Manni Phase 2.1",
       "advancements.manni_fire_resistance_adv.descr": "Give your manni fire resitance",
       "itemGroup.tabmining_mannies": "Mining Mannies",
+      "advancements.seeker_peony.title": "Seeker Peony",
       "advancements.evolve_mannis_faster.descr": "Makes them evolve a bit faster",
+      "advancements.seeker_rose_bush.title": "Seeker Rose Bush",
       "advancements.make_steel_block.title": "Make Steel Block",
       "advancements.seekers_adv.descr": "Use seekers to help you find ores",
       "advancements.make_own_iron_ore.title": "Make Own Iron Ore",
@@ -3330,20 +3490,24 @@
       "advancements.evolve_mannis_even_faster_adv.descr": "Make Mannies evolve even faster",
       "entity.miningmannies.mining_manni_slot_12": "Mining Manni Phase 1.2",
       "entity.miningmannies.mining_manni_slot_10": "Mining Manni Baby",
-      "advancements.climb_with_an_axe.descr": "Make a climbing axe to get out of the Manni holes!",
+      "advancements.climb_with_an_axe.descr": "one to slow a fall, two to climb right out",
       "advancements.glowing_effect_adv.descr": "Hold a torch and give a click on a manni",
       "advancements.make_own_lapis_ore.title": "Make Own Lapis Ore",
       "advancements.adventure_begins.descr": "Make a Mining Manni",
       "advancements.manni_jump_boost_adv.descr": "Hold in the main hand and click on a Manni",
       "item.miningmannies.climbing_axe": "Climbing Axe",
       "advancements.make_metal_detector_adv.descr": "Detect ores underground",
+      "item.miningmannies.trophy": "Trophy",
       "advancements.level_2_mannies.title": "Phase 2 Mannies",
       "entity.miningmannies.mining_manni_slot_15": "Mining Manni Phase 1.5",
       "entity.miningmannies.mining_manni_slot_13": "Mining Manni Phase 1.3",
       "entity.miningmannies.mining_manni_slot_14": "Mining Manni Phase 1.4",
       "item.miningmannies.ore_seeker_level_2": "Ore Seeker Level 2 Spawn Egg",
+      "item.miningmannies.ore_seeker_level_3": "Ore Seeker Level 3 Spawn Egg",
+      "advancements.seeker_peony.descr": "Seeker3 [Peony\u003ddiamond]",
       "advancements.make_teleporter_challenge.descr": "Ring of iron blocks, and a redstone heart",
       "item.miningmannies.mining_manni_slot_11": "Mining Manni Phase 1.1 Spawn Egg",
+      "advancements.seekerdandelion.descr": "Seeker3 [dandelion\u003diron ore]",
       "item.miningmannies.mining_manni_slot_12": "Mining Manni Phase 1.2 Spawn Egg",
       "item.miningmannies.mining_manni_slot_10": "Mining Manni Baby Spawn Egg",
       "advancements.heal_mannis_adv.descr": "Heal mannies with flower power",
@@ -3351,15 +3515,22 @@
       "advancements.seekers_adv.title": "Seeker Helpers",
       "advancements.make_own_redstone_ore.title": "Make Own Redstone Ore",
       "advancements.level_4_mannies.title": "Phase 4 Mannies",
+      "advancements.mining_manni_master.title": "Mining Manni Master",
       "item.miningmannies.mining_manni_slot_22": "Mining Manni Phase 2.2 Spawn Egg",
+      "advancements.seeker_azure_bluet.descr": "Seeker3 [Azure Bluet\u003dgold ore]",
       "item.miningmannies.mining_manni_slot_23": "Mining Manni Phase 2.3 Spawn Egg",
+      "advancements.seekertulip.title": "Seeker Tulip",
       "item.miningmannies.mining_manni_slot_20": "Mining Manni Phase 2.0 Spawn Egg",
       "item.miningmannies.mining_manni_slot_21": "Mining Manni Phase 2.1 Spawn Egg",
+      "advancements.seeker_azure_bluet.title": "Seeker Azure Bluet",
+      "advancements.seeker_oxeye_daisy.title": "Seeker Oxeye Daisy",
       "item.miningmannies.mining_manni_slot_15": "Mining Manni Phase 1.5 Spawn Egg",
       "item.miningmannies.mining_manni_slot_13": "Mining Manni Phase 1.3 Spawn Egg",
       "advancements.make_own_redstone_ore.descr": "Make a redstone ore to program a manni",
       "item.miningmannies.mining_manni_slot_14": "Mining Manni Phase 1.4 Spawn Egg",
+      "advancements.mining_manni_master.descr": "You became a Mining Manni Master!",
       "advancements.make_steel.title": "Make Steel",
+      "advancements.seeker_oxeye_daisy.descr": "Seeker3 [Oxeye Daisy\u003dredstone ore]",
       "advancements.make_own_coal_ore.descr": "Make a coal ore to program a manni",
       "advancements.make_own_nether_ore.descr": "Make a nether ore to program a manni",
       "item.miningmannies.steel_ingot": "Steel Bar",
@@ -3369,19 +3540,21 @@
       "item.miningmannies.mining_manni_slot_31": "Mining Manni Phase 3.1 Spawn Egg",
       "item.miningmannies.mining_manni_slot_32": "Mining Manni Phase 3.2 Spawn Egg",
       "item.miningmannies.mining_manni_slot_30": "Mining Manni Phase 3.0 Spawn Egg",
+      "advancements.seeker_cornflower.title": "Seeker Cornflower",
       "item.miningmannies.spawn_egg_manni_level_1": "Spawn Egg Manni Phase 1",
       "item.miningmannies.spawn_egg_manni_level_2": "Spawn Egg Manni Phase 2",
       "item.miningmannies.spawn_egg_manni_level_3": "Spawn Egg Manni Phase 3",
       "item.miningmannies.mining_manni_slot_24": "Mining Manni Phase 2.4 Spawn Egg",
       "advancements.make_own_diamond_ore.title": "Make Own Diamond Ore",
       "item.miningmannies.spawn_egg_manni_level_4": "Spawn Egg Manni Phase 4",
-      "item.miningmannies.mining_manni_slot_25": "Mining Manni Phase 2.5 Spawn Egg"
+      "item.miningmannies.mining_manni_slot_25": "Mining Manni Phase 2.5 Spawn Egg",
+      "advancements.seekertulip.descr": "Seeker3 [white tulip\u003dcoal ore]"
     }
   },
   "workspaceSettings": {
     "modid": "miningmannies",
     "modName": "MiningMannies",
-    "version": "2.0.0",
+    "version": "3.2.2",
     "description": "Use Mining Mannies to dig and collect any type of block.",
     "author": "Kezmonk, MCreator",
     "websiteURL": "https://mcreator.net/modification/67670/mining-mannies",
